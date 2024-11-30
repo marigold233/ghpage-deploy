@@ -1,0 +1,735 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title> - Linux</title>
+    <link rel="self" type="application/atom+xml" href="http://127.0.0.1:1111/tags/linux/atom.xml"/>
+    <link rel="alternate" type="text/html" href="http://127.0.0.1:1111"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2018-08-20T00:00:00+00:00</updated>
+    <id>http://127.0.0.1:1111/tags/linux/atom.xml</id>
+    <entry xml:lang="en">
+        <title>我的linux命令帮助手册</title>
+        <published>2018-08-20T00:00:00+00:00</published>
+        <updated>2018-08-20T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="http://127.0.0.1:1111/posts/wo-de-linuxming-ling-bang-zhu-shou-ce/"/>
+        <id>http://127.0.0.1:1111/posts/wo-de-linuxming-ling-bang-zhu-shou-ce/</id>
+        
+        <content type="html" xml:base="http://127.0.0.1:1111/posts/wo-de-linuxming-ling-bang-zhu-shou-ce/">&lt;h1 id=&quot;ming-ling-shou-ce&quot;&gt;命令手册&lt;&#x2F;h1&gt;
+&lt;h2 id=&quot;1-wang-luo-xiang-guan-ming-ling&quot;&gt;1. 网络相关命令&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;curl&quot;&gt;curl&lt;&#x2F;h3&gt;
+&lt;h4 id=&quot;xue-xi-zi-liao&quot;&gt;学习资料&lt;&#x2F;h4&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;catonmat.net&#x2F;cookbooks&#x2F;curl&quot;&gt;卷曲食谱 (catonmat.net)&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;h4 id=&quot;hu-lue-httpszheng-shu-he-jin-xing-mi-ma-ren-zheng&quot;&gt;忽略https证书和进行密码认证&lt;&#x2F;h4&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#6c7079;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;curl -k -u&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; admin:123 https:&#x2F;&#x2F;xxx
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h4 id=&quot;jiang-resjie-guo-zuo-wei-ling-wai-yi-ge-curlde-can-shu&quot;&gt;将res结果作为另外一个curl的参数&lt;&#x2F;h4&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#6c7079;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;curl -s --compressed --http2 -X&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; GET \
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;        -H &lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;&amp;quot;Host:smp-api.iyouke.com&amp;quot; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;\
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;        -H &lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;&amp;quot;authorization:bearer5378fb9bd91687516570322&amp;quot; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;\
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;        -H &lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;&amp;quot;charset:utf-8&amp;quot; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;\
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;        -H &lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;&amp;quot;xy-extra-frame.html&amp;quot; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;\
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;        -H &lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;&amp;quot;accept:*&#x2F;*&amp;quot; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;$&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;url &lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt;| &lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;\
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;curl -s -u&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; yanghe:8m.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt; -d&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; @- http:&#x2F;&#x2F;localhost:8081&#x2F;moto
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h4 id=&quot;lian-jie-wang-zhan-de-hao-shi&quot;&gt;连接网站的耗时&lt;&#x2F;h4&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#6c7079;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;curl -o&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; &#x2F;dev&#x2F;null&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt; -s -w&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; time_namelookup:&lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;&amp;quot;\t&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;%{time_namelookup}&lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;&amp;quot;\n&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;time_connect:&lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;&amp;quot;\t\t&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;%{time_connect}&lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;&amp;quot;\n&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;time_pretransfer:&lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;&amp;quot;\t&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;%{time_pretransfer}&lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;&amp;quot;\n&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;time_starttransfer:&lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;&amp;quot;\t&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;%{time_starttransfer}&lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;&amp;quot;\n&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;time_total:&lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;&amp;quot;\t\t&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;%{time_total}&lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;&amp;quot;\n&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;time_redirect:&lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;&amp;quot;\t\t&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;%{time_redirect}&lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;&amp;quot;\n&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt; --dns-servers&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; 1.1.1.1 https:&#x2F;&#x2F;www.baidu.com
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h4 id=&quot;ce-shi-duan-kou-lian-tong-xing&quot;&gt;测试端口连通性&lt;&#x2F;h4&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#6c7079;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#5ebfcc;&quot;&gt;echo  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt;| &lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;curl --connect-timeout&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; 3&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt; -m&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; 3 telnet:&#x2F;&#x2F;www.baidu.com:443
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h4 id=&quot;curl-debug&quot;&gt;curl debug&lt;&#x2F;h4&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#6c7079;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;font-style:italic;color:#5f697a;&quot;&gt;# -vvv也行
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;curl -s --trace&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; -&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt; --dns-servers&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; 1.1.1.1 https:&#x2F;&#x2F;www.baidu.com 
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;wget&quot;&gt;wget&lt;&#x2F;h3&gt;
+&lt;h4 id=&quot;duan-dian-xu-chuan-hou-tai-xia-zai&quot;&gt;断点续传+后台下载&lt;&#x2F;h4&gt;
+&lt;pre data-lang=&quot;shell&quot; style=&quot;background-color:#2b303b;color:#6c7079;&quot; class=&quot;language-shell &quot;&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;wget -b -c https:&#x2F;&#x2F;xxx
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;下载这个站点目录下的全部rpm&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;shell&quot; style=&quot;background-color:#2b303b;color:#6c7079;&quot; class=&quot;language-shell &quot;&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;wget -r -np -L -nv -x -N mirrors.cmecloud.cn&#x2F;bclinux&#x2F;el8.2&#x2F;BaseOS&#x2F;x86_64&#x2F;os&#x2F;Packages&#x2F;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;ul&gt;
+&lt;li&gt;参考
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;www.cnblogs.com&#x2F;librarookie&#x2F;p&#x2F;14660645.html&quot;&gt;https:&#x2F;&#x2F;www.cnblogs.com&#x2F;librarookie&#x2F;p&#x2F;14660645.html&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;netstat&quot;&gt;netstat&lt;&#x2F;h3&gt;
+&lt;h4 id=&quot;tong-ji-tcplian-jie-zhuang-tai&quot;&gt;统计TCP连接状态&lt;&#x2F;h4&gt;
+&lt;pre data-lang=&quot;shell&quot; style=&quot;background-color:#2b303b;color:#6c7079;&quot; class=&quot;language-shell &quot;&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;netstat -n | awk &amp;#39;&#x2F;^tcp&#x2F; {++S[$NF]} END {for(a in S) print a, S[a]}&amp;#39;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;ss&quot;&gt;ss&lt;&#x2F;h3&gt;
+&lt;h4 id=&quot;zhi-ding-duan-kou-tong-ji-lian-jie-shu&quot;&gt;指定端口统计连接数&lt;&#x2F;h4&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#6c7079;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;ss -ta&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; src :6000
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;lsof&quot;&gt;lsof&lt;&#x2F;h3&gt;
+&lt;h4 id=&quot;cheng-xu-da-kai-wen-jian-shu&quot;&gt;程序打开文件数&lt;&#x2F;h4&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#6c7079;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;lsof -c&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; nginx  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt;| &lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;wc -l
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#6c7079;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;lsof &lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt;| &lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;grep&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; java &lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt;|&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;grep&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; IPv &lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt;| &lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;wc -l
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;lsof &lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt;| &lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;grep&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; java &lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt;|&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;grep&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; :6379 &lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt;| &lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;wc -l
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;telnet&quot;&gt;telnet&lt;&#x2F;h3&gt;
+&lt;h4 id=&quot;pi-liang-ce-shi-duan-kou-lian-tong-xing&quot;&gt;批量测试端口连通性&lt;&#x2F;h4&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#6c7079;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;bash -c &lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;&amp;#39;for i in {109..228}; do echo -n &amp;quot;$i:&amp;quot;;grep -q &amp;quot;Connect&amp;quot; &amp;amp;&amp;gt; &#x2F;dev&#x2F;null &amp;lt;&amp;lt;&amp;lt; `echo | timeout 3s telnet 192.168.168.$i 7000`; echo $?;done
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h2 id=&quot;2-xi-tong-xiang-guan-ming-ling&quot;&gt;2. 系统相关命令&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;top&quot;&gt;top&lt;&#x2F;h3&gt;
+&lt;h4 id=&quot;shi-shi-jiang-xu-cpuhuo-nei-cun-zhan-yong&quot;&gt;实时降序CPU或内存占用&lt;&#x2F;h4&gt;
+&lt;blockquote&gt;
+&lt;p&gt;top命令：在终端中运行top命令，然后按下&quot;Shift + M&quot;键，按内存使用量进行排序。这将显示当前运行的所有进程按照内存使用量从高到低的列表。您可以查看RES（Resident Set Size）列，它表示进程实际占用的物理内存。&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;pre data-lang=&quot;sh&quot; style=&quot;background-color:#2b303b;color:#6c7079;&quot; class=&quot;language-sh &quot;&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;Shift&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; + M 按mem降序
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;Shift&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; + C 按CPU降序
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;显示内存、swap占用百分比并显示进度条&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;sh&quot; style=&quot;background-color:#2b303b;color:#6c7079;&quot; class=&quot;language-sh &quot;&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;top&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; 按下然后按m
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;显示cpu占用百分比并显示进度条&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;sh&quot; style=&quot;background-color:#2b303b;color:#6c7079;&quot; class=&quot;language-sh &quot;&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;top&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; 按下然后按t
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;ps&quot;&gt;ps&lt;&#x2F;h3&gt;
+&lt;h4 id=&quot;cha-kan-zhan-yong-cpuzui-duo-de-jin-cheng&quot;&gt;查看占用CPU最多的进程&lt;&#x2F;h4&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#6c7079;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;ps&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; aux&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt; --sort&lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;-%&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;cpu &lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt;| &lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;head
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h4 id=&quot;cha-kan-zhan-yong-nei-cun-zui-duo-de-jin-cheng&quot;&gt;查看占用内存最多的进程&lt;&#x2F;h4&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#6c7079;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;ps&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; aux&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt; --sort&lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;-%&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;mem &lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt;| &lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;head
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;ps&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; aux&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt; --sort -rss
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h4 id=&quot;guo-lu-zhi-ding-cheng-xu-dao-zhi-biao-ti-yi-lou-wen-ti&quot;&gt;过滤指定程序导致标题遗漏问题&lt;&#x2F;h4&gt;
+&lt;p&gt;使用多重匹配，多匹配一次&lt;code&gt;PID&lt;&#x2F;code&gt;就可以解决&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#6c7079;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;ps&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; axw&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt; -o&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; pid,ppid,user,%&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;cpu&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;,vsz,wchan,command &lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt;| &lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;egrep &lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;&amp;#39;(nginx|PID)&amp;#39;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h4 id=&quot;cha-kan-zhi-ding-jin-cheng-de-cpu-memshi-yong-lu&quot;&gt;查看指定进程的CPU&amp;amp;MEM使用率&lt;&#x2F;h4&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#6c7079;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;ps -p &lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;$(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;pgrep -f&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; nginx&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt; -o&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;)&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt; -o&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; pid,user,%&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;cpu&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;,%&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;mem&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;,cmd
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;pidstat&quot;&gt;pidstat&lt;&#x2F;h3&gt;
+&lt;h4 id=&quot;cha-kan-zhi-ding-jin-cheng-cpunei-cun-zhan-yong&quot;&gt;查看指定进程CPU内存占用&lt;&#x2F;h4&gt;
+&lt;p&gt;&lt;strong&gt;可以优先使用ps&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#6c7079;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;.&#x2F;pidstat -ru -p &lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;$(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;pgrep -o&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; nginx)&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt; -h --human&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; 1&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt; -l
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h4 id=&quot;cha-kan-zhi-ding-jin-cheng-iozhan-yong&quot;&gt;查看指定进程IO占用&lt;&#x2F;h4&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#6c7079;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;.&#x2F;pidstat -d -p &lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;$(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;pgrep -o&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; nginx)&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt; -h --human&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; 1&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt; -l
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;systemd&quot;&gt;systemd&lt;&#x2F;h3&gt;
+&lt;pre data-lang=&quot;shell&quot; style=&quot;background-color:#2b303b;color:#6c7079;&quot; class=&quot;language-shell &quot;&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;# 列出正在运行的 Unit
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;$ systemctl list-units
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;# 重新加载一个服务的配置文件
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;$ sudo systemctl reload apache.service
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;# 重载所有修改过的配置文件
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;$ sudo systemctl daemon-reload
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;# 显示某个 Unit 的所有底层参a数
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;$ systemctl show httpd.service
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;# 查看指定进程的日志
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;$ sudo journalctl _PID=1
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;# 查看某个路径的脚本的日志
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;$ sudo journalctl &#x2F;usr&#x2F;bin&#x2F;bash
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;# 查看指定用户的日志
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;$ sudo journalctl _UID=33 --since today
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;# 查看某个 Unit 的日志
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;$ sudo journalctl -u nginx.service
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;$ sudo journalctl -u nginx.service --since today
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;# 实时滚动显示某个 Unit 的最新日志
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;$ sudo journalctl -u nginx.service -f
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;iptables&quot;&gt;iptables&lt;&#x2F;h3&gt;
+&lt;pre data-lang=&quot;shell&quot; style=&quot;background-color:#2b303b;color:#6c7079;&quot; class=&quot;language-shell &quot;&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;# 清空自定义链、清空规则、清空规则计数器
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;iptables -X
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;iptables -F
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;iptables -Z
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;# 指定多个端口
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;iptables -A INPUT -s 172.16.0.0&#x2F;16 -d 172.16.100.10 -p tcp -m multiport --dports 20:22,80 -j ACCEPT
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;iptables -A INPUT -s 172.16.0.0&#x2F;16 -d 172.16.100.10 -p tcp -m multiport --dports 20:22,80 -j ACCEPT
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;# iprange扩展
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;# [!] --src-range from[-to] 源IP地址范围
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;# [!] --dst-range from[-to] 目标IP地址范围
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;iptabels -A INPUT -d 172.16.1.100 -p tcp --dport 80 -m iprange --src-range 172.16.1.5-192.16.1.10 -j DROP
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;# mac 扩展
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;# mac 模块可以指明源MAC地址,，适用于：PREROUTING, FORWARD，INPUT chains
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;# [!] --mac-source xx:xx:xx:xx:xx
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;iptables -A INPUT -s 172.16.0.100 -m mac --mac-source 
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;00:50:56:12:34:56 -j ACCEPT
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;# 持久保存
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;# centos6:
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;service iptables save
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;# centos7、8
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;iptables-save &amp;gt;&#x2F;PATH&#x2F;TO&#x2F;SOME_RULES_FILE
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;# 加载规则 centos7：
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;iptables-restore &amp;lt; &#x2F;PATH&#x2F;FROM&#x2F;SOME_RULES_FILE
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;-n, -noflush: 不清除原有规则
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;-t, -test: 仅生成规则集，但不提交
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;# centos6
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;#会自动从&#x2F;etc&#x2F;sysconfig&#x2F;iptables 重新载入规则
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;service  iptables  restart
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h4 id=&quot;fang-huo-qiang-gui-ze-shi-li&quot;&gt;防火墙规则示例&lt;&#x2F;h4&gt;
+&lt;pre data-lang=&quot;shell&quot; style=&quot;background-color:#2b303b;color:#6c7079;&quot; class=&quot;language-shell &quot;&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;# ssh 端口重要
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;iptables -A INPUT -p tcp -m state --state=NEW,ESTABLISHED --dport 5151 -j ACCEPT
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;# 服务相关
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;# ng注意端口
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;iptables -A INPUT -p tcp -m state --state=NEW,ESTABLISHED --dport 6100 -j ACCEPT
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;# 其它规则
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;iptables -A INPUT -m state --state=INVALID -j DROP
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;iptables -A INPUT -i lo  -j ACCEPT
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;iptables -A INPUT -p icmp -j ACCEPT
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;iptables -A INPUT -m iprange --src-range 192.168.12.89-192.168.12.90 -j ACCEPT
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;iptables -A INPUT -m state --state NEW -m tcp -p tcp --dport 10050 -j ACCEPT
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;# END
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;iptables -A INPUT -p all -s any&#x2F;0 -j DROP
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;pre data-lang=&quot;shell&quot; style=&quot;background-color:#2b303b;color:#6c7079;&quot; class=&quot;language-shell &quot;&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;# ssh 端口重要
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;iptables -A INPUT -p tcp -m state --state=NEW,ESTABLISHED --dport 5151 -j ACCEPT
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;# 服务相关，尽早匹配
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;# ng注意端口
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;iptables -A INPUT -p tcp  -m state state=NEW,ESTABLISHED,RELATED --dport 6000 -j ACCEPT
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;# 其它规则
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;iptables -A INPUT -m state INVALID -j DROP
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;iptables -A INPUT -i lo  -j ACCEPT
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;iptables -A INPUT -p icmp -j ACCEPT
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;iptables -A INPUT -m iprange --src-range 192.168.12.89-192.168.12.90 -j ACCEPT
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;# END
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;iptables -A INPUT -p all -s any&#x2F;0 -j DROP
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;pre data-lang=&quot;shell&quot; style=&quot;background-color:#2b303b;color:#6c7079;&quot; class=&quot;language-shell &quot;&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;# ssh 端口重要
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;iptables -A INPUT -p tcp -m state --state=NEW,ESTABLISHED --dport 5151 -j ACCEPT
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;# 服务相关，尽早匹配
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;# 管理服务对ng放行
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;iptables -A INPUT -p tcp -s 192.168.12.12&#x2F;24 -m state state=NEW,ESTABLISHED,RELATED --dport 6200 -j ACCEPT
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;iptables -A INPUT -p tcp -s 192.168.12.13&#x2F;24 -m state state=NEW,ESTABLISHED,RELATED --dport 6200 -j ACCEPT
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;iptables -A INPUT -p tcp -s 192.168.12.61&#x2F;24 -m state state=NEW,ESTABLISHED,RELATED --dport 6200 -j ACCEPT
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;iptables -A INPUT -p tcp -s 192.168.12.62&#x2F;24 -m state state=NEW,ESTABLISHED,RELATED --dport 6200 -j ACCEPT
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;# 其它规则
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;iptables -A INPUT -m state INVALID -j DROP
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;iptables -A INPUT -i lo  -j ACCEPT
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;iptables -A INPUT -p icmp -j ACCEPT
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;iptables -A INPUT -m iprange --src-range 192.168.12.89-192.168.12.90 -j ACCEPT
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;# END
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;iptables -A INPUT -p all -s any&#x2F;0 -j DROP
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;pre data-lang=&quot;shell&quot; style=&quot;background-color:#2b303b;color:#6c7079;&quot; class=&quot;language-shell &quot;&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;sudo -i
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;systemctl stop firewalld
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;systemctl disable firewalld
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;iptables -X
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;iptables -F
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;iptables -Z
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;netstat -anpt | grep ssh | head
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;iptables -A INPUT -p tcp -m state --state=NEW,ESTABLISHED --dport 5151 -j ACCEPT
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;iptables -A INPUT -p tcp -s 192.168.12.12 -m state --state=NEW,ESTABLISHED,RELATED --dport 6200 -j ACCEPT
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;iptables -A INPUT -p tcp -s 192.168.12.13 -m state --state=NEW,ESTABLISHED,RELATED --dport 6200 -j ACCEPT
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;iptables -A INPUT -p tcp -s 192.168.12.61 -m state --state=NEW,ESTABLISHED,RELATED --dport 6200 -j ACCEPT
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;iptables -A INPUT -p tcp -s 192.168.12.62 -m state --state=NEW,ESTABLISHED,RELATED --dport 6200 -j ACCEPT
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;# 其它规则
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;iptables -A INPUT -m state --state=INVALID -j DROP
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;iptables -A INPUT -i lo  -j ACCEPT
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;iptables -A INPUT -p icmp -j ACCEPT
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;iptables -A INPUT -m iprange --src-range 192.168.12.89-192.168.12.90 -j ACCEPT
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;iptables -A INPUT -m iprange --src-range 192.168.12.14-192.168.12.17 -j ACCEPT
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;iptables -A INPUT -m state --state NEW -m tcp -p tcp --dport 10050 -j ACCEPT
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;#iptables -A INPUT -p all -s any&#x2F;0 -j DROP
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;yum-tui-jian-shi-yong-dnf&quot;&gt;yum(推荐使用dnf)&lt;&#x2F;h3&gt;
+&lt;h4 id=&quot;yum-config-manager&quot;&gt;yum-config-manager&lt;&#x2F;h4&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#6c7079;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;yum -y&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; install yum-utils
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;建议使用阿里云yum源：（推荐）&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#6c7079;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;yum-config-manager --add-repo&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; https:&#x2F;&#x2F;download.docker.com&#x2F;linux&#x2F;centos&#x2F;docker-ce.repo
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;yum-config-manager --add-repo&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; http:&#x2F;&#x2F;mirrors.aliyun.com&#x2F;docker-ce&#x2F;linux&#x2F;centos&#x2F;docker-ce.repo
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;last&quot;&gt;last&lt;&#x2F;h3&gt;
+&lt;h4 id=&quot;zhong-qi-fu-wu-qi-de-shi-jian&quot;&gt;重启服务器的时间&lt;&#x2F;h4&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#6c7079;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;last -x&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; reboot
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;pmap&quot;&gt;pmap&lt;&#x2F;h3&gt;
+&lt;h4 id=&quot;dang-qian-jin-cheng-zhan-yong-nei-cun-de-zong-liang&quot;&gt;当前进程占用内存的总量&lt;&#x2F;h4&gt;
+&lt;p&gt;&lt;del&gt;writeable&#x2F;private 好像是当前进程占用内存的总量，可能不对&lt;&#x2F;del&gt;&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;sh&quot; style=&quot;background-color:#2b303b;color:#6c7079;&quot; class=&quot;language-sh &quot;&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;name&lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;idreader&lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt;; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;pmap -d &lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;$(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;pgrep -fn &lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;$&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;name&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;))
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;pgrep&quot;&gt;pgrep&lt;&#x2F;h3&gt;
+&lt;h4 id=&quot;grepguo-lu-ming-ling-helpcan-shu&quot;&gt;grep过滤命令help参数&lt;&#x2F;h4&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#6c7079;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;pgrep --help1 &lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt;|&amp;amp; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;grep -wEc&lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt; -- &lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;&amp;#39;-l|-f&amp;#39;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;pgrep --help1 &lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt;|&amp;amp; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;grep -wEc&lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt; -- &lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;&amp;#39;-a|-f&amp;#39;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;pgrep --help1 &lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt;| &lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;grep -wEc&lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt; -- &lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;&amp;#39;-l|-f&amp;#39;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;pgrep --help1 &lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt;| &lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;grep -wEc&lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt; -- &lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;&amp;#39;-a|-f&amp;#39;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;sudo&quot;&gt;sudo&lt;&#x2F;h3&gt;
+&lt;h4 id=&quot;pan-duan-yong-hu-shi-fou-ju-you-sudoquan-xian&quot;&gt;判断用户是否具有sudo权限&lt;&#x2F;h4&gt;
+&lt;pre data-lang=&quot;shell&quot; style=&quot;background-color:#2b303b;color:#6c7079;&quot; class=&quot;language-shell &quot;&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;sudo -l -U zhangsan
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;tian-jia-yong-hu-wei-sudoyong-hu&quot;&gt;添加用户为sudo用户&lt;&#x2F;h3&gt;
+&lt;pre data-lang=&quot;shell&quot; style=&quot;background-color:#2b303b;color:#6c7079;&quot; class=&quot;language-shell &quot;&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;sudo usermod -aG wheel yanghe
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;nmcli&quot;&gt;nmcli&lt;&#x2F;h3&gt;
+&lt;h4 id=&quot;pei-zhi-ipdi-zhi&quot;&gt;配置IP地址&lt;&#x2F;h4&gt;
+&lt;pre data-lang=&quot;shell&quot; style=&quot;background-color:#2b303b;color:#6c7079;&quot; class=&quot;language-shell &quot;&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;nmcli con show
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; nmcli con mod enp0s8 ipv4.addresses 192.168.56.119&#x2F;24 ipv4.gateway 192.168.56.1 ipv4.method manual
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; nmcli con up enp0s8
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h2 id=&quot;3-wen-jian-cao-zuo-xiang-guan-ming-ling&quot;&gt;3. 文件操作相关命令&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;dasel&quot;&gt;dasel&lt;&#x2F;h3&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#6c7079;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#5ebfcc;&quot;&gt;echo &lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;&amp;#39;{&amp;quot;users&amp;quot;: [{&amp;quot;name&amp;quot;: &amp;quot;Tom&amp;quot;}]}&amp;#39; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt;| &lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;dasel&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; put object&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt; -p&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; json&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt; -t&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; string &lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;&amp;#39;.users.[]&amp;#39;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; name=Frank
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;.&#x2F;dasel_linux_amd64&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; delete&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt; -f&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;  example.json&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt; -m &lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;&amp;#39;.(?:host=192.168.168.33)&amp;#39;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;.&#x2F;dasel_linux_amd64 -n -f&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;  example.json&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt; -m &lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;&amp;#39;.(?:host=192.168.168.911)&amp;#39;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;.&#x2F;dasel_linux_amd64 -n -f&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;  example.json&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt; -m &lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;&amp;#39;[0].host&amp;#39; 
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; &lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#5f697a;&quot;&gt;# 将删除的内容输出到xxx.json，并不会删除源文件内容，如果不指定-o 则会在源文件上进行修改
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;.&#x2F;dasel_linux_amd64&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; delete&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt; -f&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; example.json &lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;&amp;#39;[0]&amp;#39;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;  -o&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; xxx.json
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h4 id=&quot;can-kao&quot;&gt;参考&lt;&#x2F;h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;TomWright&#x2F;dasel#one-tool-to-rule-them-all&quot;&gt;TomWright&#x2F;dasel: Select, put and delete data from JSON, TOML, YAML, XML and CSV files with a single tool. Supports conversion between formats and can be used as a Go package. (github.com)&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;jq表达式在线验证&lt;a href=&quot;https:&#x2F;&#x2F;jqplay.org&#x2F;&quot;&gt;jq play&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;tar&quot;&gt;tar&lt;&#x2F;h3&gt;
+&lt;h4 id=&quot;tong-guo-biao-zhun-shu-ru-jin-xing-da-bao&quot;&gt;通过标准输入进行打包&lt;&#x2F;h4&gt;
+&lt;p&gt;&lt;code&gt;ls -f&lt;&#x2F;code&gt;替换find性能会提高很多&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#6c7079;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;find &lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;$&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;max_dir -name &lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt;*&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;.json &lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt;| &lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;head -$file_num &lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt;| &lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;tar&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; zcvf $&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;tar_dir&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;&#x2F;$&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;tar_name -T&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; -&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt; --remove-file &lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt;&amp;gt;&amp;gt;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;$&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;tar_dir&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;&#x2F;tar.log
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;awk&quot;&gt;awk&lt;&#x2F;h3&gt;
+&lt;h4 id=&quot;shi-yong-zheng-ze-jin-xing-fen-zu&quot;&gt;使用正则进行分组&lt;&#x2F;h4&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#6c7079;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#5ebfcc;&quot;&gt;echo &lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;-e &lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;&amp;quot;Saturday\ntoday&amp;quot; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt;| &lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;awk &lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;&amp;#39;match($1, &#x2F;S(.*)?t(.*)y&#x2F;, groups) { print groups[1]; print groups[2]; }&amp;#39;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;pcregrep-pcre2grep&quot;&gt;pcregrep &amp;amp; pcre2grep&lt;&#x2F;h3&gt;
+&lt;p&gt;专门使用PCRE规范来实现的grep
+使用正则表达式：&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;shell&quot; style=&quot;background-color:#2b303b;color:#6c7079;&quot; class=&quot;language-shell &quot;&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;pcregrep  -o1 &amp;#39;echo(.*?)d&amp;#39; hello-world.sh
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;blockquote&gt;
+&lt;p&gt;主要原因是grep支持三种正则表达式BRE,ERE,PCRE，而其默认使用的是BRE，但\d是定义在PCRE中的，所以grep默认是不支持\d的。&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;p&gt;pcre2grep 有个好用的功能：&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;shell&quot; style=&quot;background-color:#2b303b;color:#6c7079;&quot; class=&quot;language-shell &quot;&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;$ echo -e &amp;#39;name:zhangsan,age:18 \n name:lisi,age:20&amp;#39; | pcre2grep -O &amp;#39;$1 $2&amp;#39; &amp;#39;name:(\w+),age:(\d+)&amp;#39;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;zhangsan 18
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;lisi 20
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;ul&gt;
+&lt;li&gt;参考
+&lt;ul&gt;
+&lt;li&gt;https:&#x2F;&#x2F;www.cnblogs.com&#x2F;codelogs&#x2F;p&#x2F;16060372.html&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;tail&quot;&gt;tail&lt;&#x2F;h3&gt;
+&lt;h4 id=&quot;tail-fjia-guan-dao-ming-ling-hou-bu-neng-ji-shi-shu-chu-de-wen-ti-iohuan-chong&quot;&gt;tail -f加管道命令后不能及时输出的问题(IO缓冲&lt;&#x2F;h4&gt;
+&lt;ol&gt;
+&lt;li&gt;使用stdbuf命令
+&lt;code&gt;tail -fn0 a.log | stdbuf -oL grep &quot;F3 00&quot; | grep SR&lt;&#x2F;code&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;把标准输出重定向到标准错误上，并把错误也给管道（因为stderr是无缓冲的）
+&lt;code&gt;tail -f &amp;gt;&amp;amp;2 |&amp;amp; awk&lt;&#x2F;code&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;h2 id=&quot;4-zhong-jian-jian-xiang-guan-ming-ling&quot;&gt;4. 中间件相关命令&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;nginx&quot;&gt;nginx&lt;&#x2F;h3&gt;
+&lt;h4 id=&quot;tong-guo-xin-hao-kong-zhi-nginx&quot;&gt;通过信号控制nginx&lt;&#x2F;h4&gt;
+&lt;p&gt;NGINX默认master进程pid文件在&lt;del&gt;&#x2F;usr&#x2F;local&#x2F;nginx&#x2F;logs&#x2F;nginx.pid&lt;&#x2F;del&gt;，我的Mint在&lt;code&gt;&#x2F;var&#x2F;run&#x2F;nginx.pid&lt;&#x2F;code&gt;
+![[Snipaste_2023-07-12_14-17-01.png]]
+主进程支持以下信号：&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;TERM,INT ：快速关闭&lt;&#x2F;li&gt;
+&lt;li&gt;QUIT： 优雅的关闭&lt;&#x2F;li&gt;
+&lt;li&gt;HUP ：更改配置，使用新配置启动进程，关闭旧进程&lt;&#x2F;li&gt;
+&lt;li&gt;USR1：重新打开日志文件&lt;&#x2F;li&gt;
+&lt;li&gt;USR2：升级可执行文件&lt;&#x2F;li&gt;
+&lt;li&gt;WINCH：优雅的关闭工作进程，单个工作进程也可以用信号控制，不是必须的
+&lt;ul&gt;
+&lt;li&gt;TERM, INT：快速关闭&lt;&#x2F;li&gt;
+&lt;li&gt;QUIT：优雅的关闭&lt;&#x2F;li&gt;
+&lt;li&gt;重新打开日志文件&lt;&#x2F;li&gt;
+&lt;li&gt;WINCH：终止异常调试（需要启用debug_points）&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h4 id=&quot;geng-gai-nginxpei-zhi&quot;&gt;更改nginx配置&lt;&#x2F;h4&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#6c7079;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;ps&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; axw&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt; -o&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; pid,ppid,user,%&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;cpu&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;,vxz,wchan,command &lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt;| &lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;egrep &lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;&amp;#39;(nginx|PID)&amp;#39;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#5ebfcc;&quot;&gt;kill&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; -HUP 33126
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;PID为33126的进程仍在工作，一段时间后就会退出&lt;&#x2F;p&gt;
+&lt;h4 id=&quot;ri-zhi-wen-jian-lun-xun&quot;&gt;日志文件轮询&lt;&#x2F;h4&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#6c7079;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;mv&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; access.log access_bak.log
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#5ebfcc;&quot;&gt;kill&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; -USR1 11604
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h4 id=&quot;dong-tai-sheng-ji-ke-zhi-xing-wen-jian&quot;&gt;动态升级可执行文件&lt;&#x2F;h4&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;www.hxstrive.com&#x2F;subject&#x2F;nginx&#x2F;796.htm&quot;&gt;通过信号控制 nginx - Nginx 教程 (hxstrive.com)&lt;&#x2F;a&gt;
+不如kill掉，替换&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;docker&quot;&gt;Docker&lt;&#x2F;h3&gt;
+&lt;pre data-lang=&quot;shell&quot; style=&quot;background-color:#2b303b;color:#6c7079;&quot; class=&quot;language-shell &quot;&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;docker save -o docker-elk-filebeat.tar docker-elk-filebeat:latest # 导出镜像
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; docker load -i docker-elk-filebeat.tar # 导入镜像
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;docker kill 容器ID或镜像名字 # 删除容器
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;docker rmi 镜像名称 # 删除镜像
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;# 一次性删除多个容器实例：
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;docker rm -f $(docker ps -a -q)
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;docker rm -a -q | xargs docker rm
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;docker export 容器ID &amp;gt; 文件名.tar # 导出容器
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;# 恢复到新的镜像，然后创建新的容器
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;cat 文件名.tar | docker import - 
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;docker run -it ...
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;# 容器打包成镜像
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;docker commit -m &amp;quot;描述&amp;quot; -a &amp;quot;作者&amp;quot; 容器ID:tag
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;# 容器卷
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;docker run -it --privileged=true -v &#x2F;宿主机目录:&#x2F;容器内目录:rw 镜像名 (默认是rw)，可以改为ro（read only），容器卷只读，不可写入。宿主机可以写入，同步给容器。
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;# docker卷继承
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;docker run -it --privileged=true --volumes-from 父类 --name u2 ubuntu
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;# 查看所有虚玄镜像
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;docker image ls -f dangling=true
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;# 删除所有虚玄镜像
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;docker image prune
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Docker挂在主机目录访问如果出现connot open directory ：Permission denied
+解决办法：在挂载目录后多加一个--privileged=true&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;docker-compose&quot;&gt;docker-compose&lt;&#x2F;h3&gt;
+&lt;pre data-lang=&quot;shell&quot; style=&quot;background-color:#2b303b;color:#6c7079;&quot; class=&quot;language-shell &quot;&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;docker-compose up # 启动所有docker-compose服务
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;docker-compose up -d # 启动所有docker-compose服务在后台运行
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;docker-compose down # 停止并删除容器、网络、卷、镜像
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;docker-compose exec 容器ID &#x2F;bin&#x2F;bash # 进入容器内部
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;docker-compose ps # 展示当前docker-compose编排过的运行的所有容器
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;docker-compose top # 展示当前docker-compose编排过的容器进程
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;docker-compose logs 容器ID # 查看容器输出日志
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;docker-compose config # 检查配置
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;docker-compose config -q # 检查配置，有问题才输出
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;docker-compose restart # 重启服务
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;docker-compose start # 启动服务
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;docker-compose stop # 停止服务
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;## 5. shell相关命令
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;### shuf
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;**在使用`shuf`命令时，请注意，它可能无法处理非常大的文件，因为它会将整个文件加载到内存中进行处理。对于大型文件，您可能需要寻找其他工具或方法来进行随机化处理。**
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;```sh
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;shuf input.txt
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;# 覆盖
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;shuf input.txt -o output.txt
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;# 随机抽取5行
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;shuf -n 5 input.txt
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;# 生成一个随机数
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;shuf -i 1-100 -n 1
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;# 从标准输入读取内容
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;echo -e &amp;quot;line1\nline2\nline3&amp;quot; | shuf
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;# 生成指定范围小数
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;min=0; max=1; scale=100; shuf -i &amp;quot;$((min*scale))-$((max*scale))&amp;quot; -n 1 | awk &amp;#39;{ print $1 &#x2F; 100 }&amp;#39;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h2 id=&quot;5-shelljiao-ben-xiang-guan-ming-ling&quot;&gt;5. shell脚本相关命令&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;numfmt&quot;&gt;numfmt&lt;&#x2F;h3&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#6c7079;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;yanghe@IkunOS:~&#x2F;coreutils-9.3&#x2F;src$&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; .&#x2F;numfmt&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt; --help
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;用法:&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; .&#x2F;numfmt &lt;&#x2F;span&gt;&lt;span style=&quot;color:#cd74e8;&quot;&gt;[&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;选项&lt;&#x2F;span&gt;&lt;span style=&quot;color:#cd74e8;&quot;&gt;]&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;... &lt;&#x2F;span&gt;&lt;span style=&quot;color:#cd74e8;&quot;&gt;[&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;数字&lt;&#x2F;span&gt;&lt;span style=&quot;color:#cd74e8;&quot;&gt;]&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;...
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;对 &lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt;&amp;lt;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;数字&lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt;&amp;gt;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; 进行重新格式化，如果未指定 &lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt;&amp;lt;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;数字&lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt;&amp;gt;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;，则从标准输入读取数字。
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;长选项的必选参数对于短选项也是必选的。
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;      &lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;--debug&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;          对无效的输入内容打印警告信息
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;-d, --delimiter&lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;X    使用 X 而不是空格作为字段分隔符
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;      &lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;--field&lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;FIELDS   &lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;replace&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; the numbers in these input fields (default=1)&lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt;;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;                         &lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;see&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; FIELDS below
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;      &lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;--format&lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;格式    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;使用&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; printf 风格的浮点 &lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt;&amp;lt;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;格式&lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt;&amp;gt;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;；
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;                         &lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;参见下文 &lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt;&amp;lt;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;格式&lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt;&amp;gt;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; 部分以了解细节
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;      &lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;--from&lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;单位      &lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;使用 &lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt;&amp;lt;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;单位&lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt;&amp;gt;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; 对输入数字进行自动缩放；默认值为 &lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;&amp;quot;none&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;；
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;                         &lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;参见下文 &lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt;&amp;lt;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;单位&lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt;&amp;gt;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; 部分
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;      &lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;--from-unit&lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;N    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;指定输入的单位大小（而非默认值&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; 1）
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;      &lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;--grouping&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;       使用区域设置中定义的方法对数字进行分组，例如 1,000,000
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;                         &lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;（意味着该选项在&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; C&#x2F;POSIX 区域设置下无效果）
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;      &lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;--header[&lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;N]     将前&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; N 行视为头部，原样输出（不进行转换）；
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;                         &lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;如未指定&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; N，默认值为 1
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;      &lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;--invalid&lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;模式   &lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;遇到无效数字时的处理模式： &lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt;&amp;lt;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;模式&lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt;&amp;gt;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; 可以是：
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;                         &lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;abort（默认）、fail、warn、ignore
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;      &lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;--padding&lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;N      &lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;将输出填充至&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; N 字符长度；若 N 值为正，则使用
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;                         &lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;右对齐；若&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; N 值为负，则使用左对齐；
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;                         &lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;若输出宽度大于&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; N 的绝对值，则不填充；
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;                         &lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;默认行为是如果输入含有空格，则自动填充
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;      &lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;--round&lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;方法     &lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;缩放时使用指定 &lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt;&amp;lt;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;方法&lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt;&amp;gt;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; 进行舍入；&lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt;&amp;lt;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;方法&lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt;&amp;gt;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; 可以是：
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;                         &lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;up、down、from-zero（默认）、towards-zero、nearest
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;      &lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;--suffix&lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;后缀    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;将 &lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt;&amp;lt;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;后缀&lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt;&amp;gt;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; 添加到输出数字之后，并允许输入数字中
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;                         &lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;含有该 &lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt;&amp;lt;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;后缀&lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt;&amp;gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;      &lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;--to&lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;单位        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;使用 &lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt;&amp;lt;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;单位&lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt;&amp;gt;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; 对输出数字进行自动缩放；参见下文 &lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt;&amp;lt;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;单位&lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt;&amp;gt;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; 部分
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;      &lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;--to-unit&lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;N      &lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;指定输出的单位大小（而非默认值&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; 1）
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;-z, --zero-terminated&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;    以 NUL 空字符而非换行符作为行分隔符
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;      &lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;--help&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;        display this help and exit
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;      &lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;--version&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;     output version information and exit
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt;&amp;lt;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;单位&lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt;&amp;gt;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; 选项：
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;none&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;       不进行自动缩放；带后缀会触发错误
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;auto&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;       接受可选的单字符或双字符后缀：
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;               &lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;1K&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; = 1000,
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;               &lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;1Ki&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; = 1024,
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;               &lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;1M&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; = 1000000,
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;               &lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;1Mi&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; = 1048576,
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;si&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;         接受可选的单字符后缀：
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;               &lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;1K&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; = 1000,
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;               &lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;1M&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; = 1000000,
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;               &lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;...
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;iec&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;        接受可选的单字符后缀：
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;               &lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;1K&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; = 1024,
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;               &lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;1M&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; = 1048576,
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;               &lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;...
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;iec-i&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;      接受可选的双字符后缀：
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;               &lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;1Ki&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; = 1024,
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;               &lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;1Mi&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; = 1048576,
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;               &lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;...
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt;&amp;lt;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;字段&lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt;&amp;gt;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; 支持 &lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;cut&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;(1) &lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;风格的字段范围：
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;N&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;    第 N 个字段，从 1 开始计数
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;N-&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;   从第 N 个字段开始，到行尾
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;N-M&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;  第 N 个到第 M 个字段（含第 N 个和第 M 个）
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;-M&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;   第 1 个到第 M 个字段（含第 1 个和第 M 个）
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;-&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;    所有字段
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;多个字段或字段范围可以使用逗号分隔
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt;&amp;lt;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;格式&lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt;&amp;gt;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; 必须适合打印一个浮点参数 &lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;&amp;quot;%f&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;。
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;可选的单引号&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; (%&lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;&amp;#39;f) 将启用 --grouping（如果当前区域设置支持）。
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;可选的宽度值 (%10f) 会填充输出。可选的以 0 开头 (%010f) 的宽度
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;会使用 0 对数字进行填充。可选的负值 (%-10f) 会启用左对齐。
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;可选的精度 (%.1f) 会覆盖由输入所确定的精度。
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;如果所有输入数字均成功转换，退出状态值将为 0。
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;默认情况下，.&#x2F;numfmt 将会在第一个转换错误出现时停止并将退出状态设为 2。
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;如果使用了 --invalid=&amp;#39;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;fail&lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;&amp;#39;，程序每次遇到转换错误时都将输出警告，并在
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;最后将退出状态设为 2。如果使用了 --invalid=&amp;#39;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;warn&lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;&amp;#39;，程序每次遇到转换
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;错误时都输出诊断信息，但最后的退出状态将为 0。如果使用了
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;--invalid=&amp;#39;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;ignore&lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;&amp;#39;，程序在遇到转换错误时将不输出诊断信息，最后的
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;退出状态也将为 0。
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;示例：
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;  $ .&#x2F;numfmt --to=si 1000
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;            -&amp;gt; &amp;quot;1.0K&amp;quot;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;  $ .&#x2F;numfmt --to=iec 2048
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;           -&amp;gt; &amp;quot;2.0K&amp;quot;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;  $ .&#x2F;numfmt --to=iec-i 4096
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;           -&amp;gt; &amp;quot;4.0Ki&amp;quot;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;  $ echo 1K | .&#x2F;numfmt --from=si
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;           -&amp;gt; &amp;quot;1000&amp;quot;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;  $ echo 1K | .&#x2F;numfmt --from=iec
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;           -&amp;gt; &amp;quot;1024&amp;quot;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;  $ df -B1 | .&#x2F;numfmt --header --field 2-4 --to=si
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;  $ ls -l  | .&#x2F;numfmt --header --field 5 --to=iec
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;  $ ls -lh | .&#x2F;numfmt --header --field 5 --from=iec --padding=10
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;  $ ls -lh | .&#x2F;numfmt --header --field 5 --from=iec --format %10f
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;GNU coreutils 在线帮助：&amp;lt;https:&#x2F;&#x2F;www.gnu.org&#x2F;software&#x2F;coreutils&#x2F;&amp;gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;请向 &amp;lt;http:&#x2F;&#x2F;translationproject.org&#x2F;team&#x2F;zh_CN.html&amp;gt; 报告任何翻译错误
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;完整文档 &amp;lt;https:&#x2F;&#x2F;www.gnu.org&#x2F;software&#x2F;coreutils&#x2F;numfmt&amp;gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;或者在本地使用：info &amp;#39;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;(coreutils) &lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;numfmt&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; invocation&lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;&amp;#39;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;sui-ji-sheng-cheng-mi-ma&quot;&gt;随机生成密码&lt;&#x2F;h3&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#6c7079;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;tr -dc &lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;&amp;#39;A-Za-z0-9_!@#$%^&amp;amp;*()-+=&amp;#39; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt;&amp;lt;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; &#x2F;dev&#x2F;urandom &lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt;| &lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;head -c&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; 12
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;shc&quot;&gt;shc&lt;&#x2F;h3&gt;
+&lt;h4 id=&quot;jia-mi-shelljiao-ben&quot;&gt;加密shell脚本&lt;&#x2F;h4&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#6c7079;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;shc -r -f&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; filename.sh
+&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#5f697a;&quot;&gt;# 开始静态编译，让可以跨平台运行
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;cc -Wall -lutil -static -o&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; filename filename.x.c
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h2 id=&quot;6-bao-guan-li-yu-huan-jing-guan-li&quot;&gt;6. 包管理与环境管理&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;coda&quot;&gt;coda&lt;&#x2F;h3&gt;
+&lt;pre data-lang=&quot;dos&quot; style=&quot;background-color:#2b303b;color:#6c7079;&quot; class=&quot;language-dos &quot;&gt;&lt;code class=&quot;language-dos&quot; data-lang=&quot;dos&quot;&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;# 查看conda版本，验证是否安装 
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;conda -V 
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;# 更新conda至最新版本
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;conda update conda 
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;# 更新所有包
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;conda update --all 
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;# 更新指定的包
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;conda update package_name 
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;# 创建名为env_name的新环境，并在该环境下安装名为package_name 的包，
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;# 可以指定新环境的版本号，例如：conda create -n python3 python=python3.7 numpy pandas，
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;# 创建了python3环境，python版本为3.7，同时还安装了numpy pandas包
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;conda create -n env_name package_name 
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;# 切换至env_name环境
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;conda activate env_name 
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;#退出环境
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;conda deactivate 
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;# 显示所有已经创建的环境
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;conda info -e  
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;# 或者使用 
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;conda env list
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;# 复制old_env_name为new_env_name
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;conda create --name new_env_name --clone old_env_name 
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;# 删除环境
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;conda remove --name env_name --all 
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;# 查看所有已经安装的包
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;conda list 
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;# 在当前环境中安装包
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;conda install package_name 
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;# 在指定环境中安装包
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;conda install --name env_name package_name 
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;# 删除指定环境中的包
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;conda remove -- name env_name package 
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;# 采用上一步方法删除环境失败时，可采用这种方法
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;conda env remove -n env_name 
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;# 删除当前环境中的包
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;conda remove package 
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;pre style=&quot;background-color:#2b303b;color:#6c7079;&quot;&gt;&lt;code&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;#### yaml 文件级
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;Docker Compose 的 YAML 文件包含4个一级 key:version、services、networks、volumes。
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;- version 是必须指定的，位于文件的第一行。它定义了 Compose 文件格式（主要是API）的版本。
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;- services 用于定义不同的应用服务。
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;- networks 用于指引 Docker 创建新的网络。
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;- volumes 用于指引 Docker 来创建新的卷。
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;## strip — 丢弃对象文件中的符号和其他数据
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;在嵌入式用的比较多，嵌入式存储空间一般非常小，一般服务器无所谓
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;```shell
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;yanghe@IkunOS:&#x2F;tmp$ file hello_world
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;hello_world: ELF 64-bit LSB executable, x86-64, version 1 (GNU&#x2F;Linux), statically linked, BuildID[sha1]=0266e8c8b510581d97cd75551682b839d8c8ba47, for GNU&#x2F;Linux 3.2.0, not stripped
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;yanghe@IkunOS:&#x2F;tmp$ du hello_world
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;1024 hello_world
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;yanghe@IkunOS:&#x2F;tmp$ strip -s hello_world
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;yanghe@IkunOS:&#x2F;tmp$ du hello_world
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;940 hello_world
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;yanghe@IkunOS:&#x2F;tmp$ file hello_world
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;hello_world: ELF 64-bit LSB executable, x86-64, version 1 (GNU&#x2F;Linux), statically linked, BuildID[sha1]=0266e8c8b510581d97cd75551682b839d8c8ba47, for GNU&#x2F;Linux 3.2.0, stripped
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;参考：&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;cs.pynote.net&#x2F;sf&#x2F;c&#x2F;cdm&#x2F;202110268&#x2F;&quot;&gt;strip命令 | CS笔记 (pynote.net)&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;www.cnblogs.com&#x2F;englyf&#x2F;p&#x2F;17510353.html&quot;&gt;Linux 可执行文件瘦身指令 strip 使用示例 - ENG八戒 - 博客园 (cnblogs.com)&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;qi-ta&quot;&gt;其它&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;proc-pid-status-cha-kan-nei-cun-shi-yong-lu&quot;&gt;&#x2F;proc&#x2F;pid&#x2F;status 查看内存使用率&lt;&#x2F;h3&gt;
+&lt;p&gt;&#x2F;proc&#x2F;[PID]&#x2F;status文件：每个运行的进程都在&#x2F;proc目录下有一个以进程ID命名的目录。进入特定进程的目录（例如&#x2F;proc&#x2F;12345），然后查看status文件。在status文件中，可以找到VmRSS字段，它表示进程实际占用的物理内存。&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;code&gt;cat &#x2F;proc&#x2F;12345&#x2F;status | grep VmRSS&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;shelljiang-stderrshu-chu-dao-stdout&quot;&gt;shell将stderr输出到stdout&lt;&#x2F;h3&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#6c7079;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;font-style:italic;color:#5f697a;&quot;&gt;# |&amp;amp; == 2&amp;gt;&amp;amp;1
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;python3-kai-qi-wen-jian-fu-wu-qi&quot;&gt;python3 开启文件服务器&lt;&#x2F;h3&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#6c7079;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;python3 -m&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; http.server
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;cha-kan-jin-cheng-xian-cheng-jin-cheng-xiang-xi-xin-xi&quot;&gt;查看进程线程&amp;amp;进程详细信息&lt;&#x2F;h3&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#6c7079;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;cat&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; &#x2F;proc&#x2F;102551&#x2F;status &lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt;| &lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;more
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;Name:&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; java
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;Umask:&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; 0002
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;State:&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; S (sleeping)
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;Tgid:&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; 102551
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;Ngid:&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; 0
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;Pid:&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; 102551
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;PPid:&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; 102344
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;TracerPid:&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; 0
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;Uid:&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; 1002 1002 1002 1002
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;Gid:&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; 1002 1002 1002 1002
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;FDSize:&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; 4096
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;Groups:&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; 1002 
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;VmPeak:&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; 23980072 kB
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;VmSize:&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; 23818032 kB
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;VmLck:&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;        0 kB
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;VmPin:&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;        0 kB
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;VmHWM:&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;  9205188 kB
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;VmRSS:&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;  9057300 kB
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;RssAnon:&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;  9049584 kB
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;RssFile:&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;     7716 kB
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;RssShmem:&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;        0 kB
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;VmData:&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; 23656776 kB
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;VmStk:&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;      132 kB
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;VmExe:&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;        4 kB
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;VmLib:&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;    17316 kB
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;VmPTE:&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;    18692 kB
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;VmSwap:&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;    25872 kB
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;Threads:&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; 213
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;SigQ:&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; 0&#x2F;127861
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;SigPnd:&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; 0000000000000000
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;ShdPnd:&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; 0000000000000000
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;SigBlk:&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; 0000000000000004
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;SigIgn:&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; 0000000000000002
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;SigCgt:&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; 2000000181005ccd
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;CapInh:&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; 0000000000000000
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;CapPrm:&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; 0000000000000000
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;CapEff:&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; 0000000000000000
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;CapBnd:&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; 0000001fffffffff
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;CapAmb:&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; 0000000000000000
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;Seccomp:&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; 0
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;Speculation_Store_Bypass:&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; vulnerable
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;Cpus_allowed:&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; ffffffff,ffffffff,ffffffff,ffffffff,ffffffff
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;Cpus_allowed_list:&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; 0-159
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;Mems_allowed:&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; 00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;000000,00000000,00000001
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;Mems_allowed_list:&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; 0
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;voluntary_ctxt_switches:&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; 478194
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;nonvoluntary_ctxt_switches:&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; 170
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+</content>
+        
+    </entry>
+</feed>

@@ -1,0 +1,1111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <meta content="#ffffff" name="theme-color" />
+  <meta content="#da532c" name="msapplication-TileColor" />
+
+  
+  <link href='&#x2F;icons&#x2F;site.webmanifest' rel="manifest" />
+  
+  
+  <link color="#5bbad5" href='&#x2F;icons&#x2F;safari-pinned-tab.svg' rel="mask-icon" />
+  
+  
+  <link href='&#x2F;icons&#x2F;favicon-16x16.png' rel="icon" sizes="16x16" type="image/png" />
+  
+  
+  <link href='&#x2F;icons&#x2F;favicon-32x32.png' rel="icon" sizes="32x32" type="image/png" />
+  
+  
+  <link href='&#x2F;icons&#x2F;apple-touch-icon.png' rel="apple-touch-icon" sizes="180x180" />
+  
+
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/galleria@1.6.1/dist/themes/folio/galleria.folio.min.css" integrity="sha384-+rY0QD+LRnTOquDMzGa9lXU6jIwdiQuwCJQ2cdcW0qeP/0UbjQCZlXnRsUMA+9pH" crossorigin="anonymous">
+  
+
+  
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1.9.1/css/academicons.min.css" integrity="sha384-FIue+PI4SsI9XfHCz8dBLg33b0c1fMJgNU3X//L26FYbGnlSEfWmNT7zgWc2N9b6" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css" integrity="sha256-AbA177XfpSnFEvgpYu1jMygiLabzPCJCRIBtR5jGc0k=" crossorigin="anonymous">
+  <link href="http://127.0.0.1:1111/deep-thought.css" rel="stylesheet" />
+  
+  
+
+  <title>
+    
+ | 我的linux命令帮助手册
+
+  </title>
+
+  
+  
+  
+
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" integrity="sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs" crossorigin="anonymous">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js" integrity="sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx" crossorigin="anonymous"></script>
+
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/mathtex-script-type.min.js" integrity="sha384-jiBVvJ8NGGj5n7kJaiWwWp9AjC+Yh8rhZY3GtAX8yU28azcLgoRo4oukO87g7zDT" crossorigin="anonymous"></script>
+  
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous"></script>
+  
+  
+</head>
+
+<body class="has-background-white">
+  <nav aria-label="section navigation" class="navbar is-light" role="navigation">
+    <div class="container">
+      <div class="navbar-brand">
+        <a class="navbar-item is-size-5 has-text-weight-bold" href="http:&#x2F;&#x2F;127.0.0.1:1111"></a>
+        <a aria-expanded="false" aria-label="menu" class="navbar-burger burger" data-target="navMenu" role="button">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+      <div class="navbar-menu" id="navMenu">
+        <div class="navbar-end has-text-centered">
+          
+          
+          
+          <a class="navbar-item has-text-weight-semibold" href="http:&#x2F;&#x2F;127.0.0.1:1111&#x2F;">
+            Home
+          </a>
+          
+          <a class="navbar-item has-text-weight-semibold" href="http:&#x2F;&#x2F;127.0.0.1:1111&#x2F;posts">
+            Posts
+          </a>
+          
+          <a class="navbar-item has-text-weight-semibold" href="http:&#x2F;&#x2F;127.0.0.1:1111&#x2F;tags">
+            Tags
+          </a>
+          
+          <a class="navbar-item has-text-weight-semibold" href="http:&#x2F;&#x2F;127.0.0.1:1111&#x2F;categories">
+            Categories
+          </a>
+          
+          
+          
+          <a class="navbar-item" id="nav-search" title="Search" data-target="#search-modal">
+            <span class="icon">
+              <i class="fas fa-search"></i>
+            </span>
+          </a>
+          <a class="navbar-item" id="dark-mode" title="Switch to dark theme">
+            <span class="icon">
+              <i class="fas fa-adjust"></i>
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  
+  
+
+  
+<section class="section">
+  <div class="container">
+    <div class="columns">
+      <div class="column is-8 is-offset-2">
+        <article class="box">
+          <h1 class="title">
+            我的linux命令帮助手册
+          </h1>
+          <p class="subtitle"></p>
+          <div class="columns is-multiline is-gapless">
+            <div class="column is-8">
+              
+<span class="icon-text has-text-grey">
+  <span class="icon">
+    <i class="fas fa-user"></i>
+  </span>
+  <span>Capy published on</span>
+  <span class="icon">
+    <i class="far fa-calendar-alt"></i>
+  </span>
+  <span><time datetime="2018-08-20">August 20, 2018</time></span>
+</span>
+
+            </div>
+            <div class="column is-4 has-text-right-desktop">
+              
+<span class="icon-text has-text-grey">
+  <span class="icon">
+    <i class="far fa-clock"></i>
+  </span>
+  <span>14 min,</span>
+  <span class="icon">
+    <i class="fas fa-pencil-alt"></i>
+  </span>
+  <span>2670 words</span>
+</span>
+
+            </div>
+            <div class="column">
+              
+              
+<p>
+  Categories:
+  
+  <a class="has-text-info-dark has-text-weight-semibold" href="http://127.0.0.1:1111/categories/linux/">
+    <span class="icon-text">
+      <span class="icon">
+        <i class="fas fa-cube"></i>
+      </span>
+      <span>Linux</span>
+    </span>
+  </a>
+  
+</p>
+
+              
+            </div>
+            <div class="column has-text-right-desktop">
+              
+              
+<p>
+  Tags:
+  
+  <a class="has-text-info-dark has-text-weight-semibold" href="http://127.0.0.1:1111/tags/linux/">
+    <span class="icon-text">
+      <span class="icon">
+        <i class="fas fa-tag"></i>
+      </span>
+      <span>Linux</span>
+    </span>
+  </a>
+  
+  <a class="has-text-info-dark has-text-weight-semibold" href="http://127.0.0.1:1111/tags/command/">
+    <span class="icon-text">
+      <span class="icon">
+        <i class="fas fa-tag"></i>
+      </span>
+      <span>command</span>
+    </span>
+  </a>
+  
+</p>
+
+              
+            </div>
+          </div>
+          <div class="content mt-2">
+            <h1 id="ming-ling-shou-ce">命令手册</h1>
+<h2 id="1-wang-luo-xiang-guan-ming-ling">1. 网络相关命令</h2>
+<h3 id="curl">curl</h3>
+<h4 id="xue-xi-zi-liao">学习资料</h4>
+<p><a href="https://catonmat.net/cookbooks/curl">卷曲食谱 (catonmat.net)</a></p>
+<h4 id="hu-lue-httpszheng-shu-he-jin-xing-mi-ma-ren-zheng">忽略https证书和进行密码认证</h4>
+<pre data-lang="bash" style="background-color:#2b303b;color:#6c7079;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#eb6772;">curl -k -u</span><span style="color:#abb2bf;"> admin:123 https://xxx
+</span></code></pre>
+<h4 id="jiang-resjie-guo-zuo-wei-ling-wai-yi-ge-curlde-can-shu">将res结果作为另外一个curl的参数</h4>
+<pre data-lang="bash" style="background-color:#2b303b;color:#6c7079;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#eb6772;">curl -s --compressed --http2 -X</span><span style="color:#abb2bf;"> GET \
+</span><span style="color:#eb6772;">        -H </span><span style="color:#9acc76;">&quot;Host:smp-api.iyouke.com&quot; </span><span style="color:#abb2bf;">\
+</span><span style="color:#eb6772;">        -H </span><span style="color:#9acc76;">&quot;authorization:bearer5378fb9bd91687516570322&quot; </span><span style="color:#abb2bf;">\
+</span><span style="color:#eb6772;">        -H </span><span style="color:#9acc76;">&quot;charset:utf-8&quot; </span><span style="color:#abb2bf;">\
+</span><span style="color:#eb6772;">        -H </span><span style="color:#9acc76;">&quot;xy-extra-frame.html&quot; </span><span style="color:#abb2bf;">\
+</span><span style="color:#eb6772;">        -H </span><span style="color:#9acc76;">&quot;accept:*/*&quot; </span><span style="color:#abb2bf;">$</span><span style="color:#eb6772;">url </span><span style="color:#adb7c9;">| </span><span style="color:#abb2bf;">\
+</span><span style="color:#abb2bf;">        </span><span style="color:#eb6772;">curl -s -u</span><span style="color:#abb2bf;"> yanghe:8m.</span><span style="color:#eb6772;"> -d</span><span style="color:#abb2bf;"> @- http://localhost:8081/moto
+</span></code></pre>
+<h4 id="lian-jie-wang-zhan-de-hao-shi">连接网站的耗时</h4>
+<pre data-lang="bash" style="background-color:#2b303b;color:#6c7079;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#eb6772;">curl -o</span><span style="color:#abb2bf;"> /dev/null</span><span style="color:#eb6772;"> -s -w</span><span style="color:#abb2bf;"> time_namelookup:</span><span style="color:#9acc76;">&quot;\t&quot;</span><span style="color:#abb2bf;">%{time_namelookup}</span><span style="color:#9acc76;">&quot;\n&quot;</span><span style="color:#abb2bf;">time_connect:</span><span style="color:#9acc76;">&quot;\t\t&quot;</span><span style="color:#abb2bf;">%{time_connect}</span><span style="color:#9acc76;">&quot;\n&quot;</span><span style="color:#abb2bf;">time_pretransfer:</span><span style="color:#9acc76;">&quot;\t&quot;</span><span style="color:#abb2bf;">%{time_pretransfer}</span><span style="color:#9acc76;">&quot;\n&quot;</span><span style="color:#abb2bf;">time_starttransfer:</span><span style="color:#9acc76;">&quot;\t&quot;</span><span style="color:#abb2bf;">%{time_starttransfer}</span><span style="color:#9acc76;">&quot;\n&quot;</span><span style="color:#abb2bf;">time_total:</span><span style="color:#9acc76;">&quot;\t\t&quot;</span><span style="color:#abb2bf;">%{time_total}</span><span style="color:#9acc76;">&quot;\n&quot;</span><span style="color:#abb2bf;">time_redirect:</span><span style="color:#9acc76;">&quot;\t\t&quot;</span><span style="color:#abb2bf;">%{time_redirect}</span><span style="color:#9acc76;">&quot;\n&quot;</span><span style="color:#eb6772;"> --dns-servers</span><span style="color:#abb2bf;"> 1.1.1.1 https://www.baidu.com
+</span></code></pre>
+<h4 id="ce-shi-duan-kou-lian-tong-xing">测试端口连通性</h4>
+<pre data-lang="bash" style="background-color:#2b303b;color:#6c7079;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#5ebfcc;">echo  </span><span style="color:#adb7c9;">| </span><span style="color:#eb6772;">curl --connect-timeout</span><span style="color:#abb2bf;"> 3</span><span style="color:#eb6772;"> -m</span><span style="color:#abb2bf;"> 3 telnet://www.baidu.com:443
+</span></code></pre>
+<h4 id="curl-debug">curl debug</h4>
+<pre data-lang="bash" style="background-color:#2b303b;color:#6c7079;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="font-style:italic;color:#5f697a;"># -vvv也行
+</span><span style="color:#eb6772;">curl -s --trace</span><span style="color:#abb2bf;"> -</span><span style="color:#eb6772;"> --dns-servers</span><span style="color:#abb2bf;"> 1.1.1.1 https://www.baidu.com 
+</span></code></pre>
+<h3 id="wget">wget</h3>
+<h4 id="duan-dian-xu-chuan-hou-tai-xia-zai">断点续传+后台下载</h4>
+<pre data-lang="shell" style="background-color:#2b303b;color:#6c7079;" class="language-shell "><code class="language-shell" data-lang="shell"><span style="color:#abb2bf;">wget -b -c https://xxx
+</span></code></pre>
+<p>下载这个站点目录下的全部rpm</p>
+<pre data-lang="shell" style="background-color:#2b303b;color:#6c7079;" class="language-shell "><code class="language-shell" data-lang="shell"><span style="color:#abb2bf;">wget -r -np -L -nv -x -N mirrors.cmecloud.cn/bclinux/el8.2/BaseOS/x86_64/os/Packages/
+</span></code></pre>
+<ul>
+<li>参考
+<ul>
+<li><a href="https://www.cnblogs.com/librarookie/p/14660645.html">https://www.cnblogs.com/librarookie/p/14660645.html</a></li>
+</ul>
+</li>
+</ul>
+<h3 id="netstat">netstat</h3>
+<h4 id="tong-ji-tcplian-jie-zhuang-tai">统计TCP连接状态</h4>
+<pre data-lang="shell" style="background-color:#2b303b;color:#6c7079;" class="language-shell "><code class="language-shell" data-lang="shell"><span style="color:#abb2bf;">netstat -n | awk &#39;/^tcp/ {++S[$NF]} END {for(a in S) print a, S[a]}&#39;
+</span></code></pre>
+<h3 id="ss">ss</h3>
+<h4 id="zhi-ding-duan-kou-tong-ji-lian-jie-shu">指定端口统计连接数</h4>
+<pre data-lang="bash" style="background-color:#2b303b;color:#6c7079;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#eb6772;">ss -ta</span><span style="color:#abb2bf;"> src :6000
+</span></code></pre>
+<h3 id="lsof">lsof</h3>
+<h4 id="cheng-xu-da-kai-wen-jian-shu">程序打开文件数</h4>
+<pre data-lang="bash" style="background-color:#2b303b;color:#6c7079;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#eb6772;">lsof -c</span><span style="color:#abb2bf;"> nginx  </span><span style="color:#adb7c9;">| </span><span style="color:#eb6772;">wc -l
+</span></code></pre>
+<pre data-lang="bash" style="background-color:#2b303b;color:#6c7079;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#eb6772;">lsof </span><span style="color:#adb7c9;">| </span><span style="color:#eb6772;">grep</span><span style="color:#abb2bf;"> java </span><span style="color:#adb7c9;">|</span><span style="color:#eb6772;">grep</span><span style="color:#abb2bf;"> IPv </span><span style="color:#adb7c9;">| </span><span style="color:#eb6772;">wc -l
+</span><span style="color:#eb6772;">lsof </span><span style="color:#adb7c9;">| </span><span style="color:#eb6772;">grep</span><span style="color:#abb2bf;"> java </span><span style="color:#adb7c9;">|</span><span style="color:#eb6772;">grep</span><span style="color:#abb2bf;"> :6379 </span><span style="color:#adb7c9;">| </span><span style="color:#eb6772;">wc -l
+</span></code></pre>
+<h3 id="telnet">telnet</h3>
+<h4 id="pi-liang-ce-shi-duan-kou-lian-tong-xing">批量测试端口连通性</h4>
+<pre data-lang="bash" style="background-color:#2b303b;color:#6c7079;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#eb6772;">bash -c </span><span style="color:#9acc76;">&#39;for i in {109..228}; do echo -n &quot;$i:&quot;;grep -q &quot;Connect&quot; &amp;&gt; /dev/null &lt;&lt;&lt; `echo | timeout 3s telnet 192.168.168.$i 7000`; echo $?;done
+</span></code></pre>
+<h2 id="2-xi-tong-xiang-guan-ming-ling">2. 系统相关命令</h2>
+<h3 id="top">top</h3>
+<h4 id="shi-shi-jiang-xu-cpuhuo-nei-cun-zhan-yong">实时降序CPU或内存占用</h4>
+<blockquote>
+<p>top命令：在终端中运行top命令，然后按下"Shift + M"键，按内存使用量进行排序。这将显示当前运行的所有进程按照内存使用量从高到低的列表。您可以查看RES（Resident Set Size）列，它表示进程实际占用的物理内存。</p>
+</blockquote>
+<pre data-lang="sh" style="background-color:#2b303b;color:#6c7079;" class="language-sh "><code class="language-sh" data-lang="sh"><span style="color:#eb6772;">Shift</span><span style="color:#abb2bf;"> + M 按mem降序
+</span><span style="color:#eb6772;">Shift</span><span style="color:#abb2bf;"> + C 按CPU降序
+</span></code></pre>
+<p>显示内存、swap占用百分比并显示进度条</p>
+<pre data-lang="sh" style="background-color:#2b303b;color:#6c7079;" class="language-sh "><code class="language-sh" data-lang="sh"><span style="color:#eb6772;">top</span><span style="color:#abb2bf;"> 按下然后按m
+</span></code></pre>
+<p>显示cpu占用百分比并显示进度条</p>
+<pre data-lang="sh" style="background-color:#2b303b;color:#6c7079;" class="language-sh "><code class="language-sh" data-lang="sh"><span style="color:#eb6772;">top</span><span style="color:#abb2bf;"> 按下然后按t
+</span></code></pre>
+<h3 id="ps">ps</h3>
+<h4 id="cha-kan-zhan-yong-cpuzui-duo-de-jin-cheng">查看占用CPU最多的进程</h4>
+<pre data-lang="bash" style="background-color:#2b303b;color:#6c7079;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#eb6772;">ps</span><span style="color:#abb2bf;"> aux</span><span style="color:#eb6772;"> --sort</span><span style="color:#adb7c9;">=</span><span style="color:#abb2bf;">-%</span><span style="color:#eb6772;">cpu </span><span style="color:#adb7c9;">| </span><span style="color:#eb6772;">head
+</span></code></pre>
+<h4 id="cha-kan-zhan-yong-nei-cun-zui-duo-de-jin-cheng">查看占用内存最多的进程</h4>
+<pre data-lang="bash" style="background-color:#2b303b;color:#6c7079;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#eb6772;">ps</span><span style="color:#abb2bf;"> aux</span><span style="color:#eb6772;"> --sort</span><span style="color:#adb7c9;">=</span><span style="color:#abb2bf;">-%</span><span style="color:#eb6772;">mem </span><span style="color:#adb7c9;">| </span><span style="color:#eb6772;">head
+</span><span style="color:#eb6772;">ps</span><span style="color:#abb2bf;"> aux</span><span style="color:#eb6772;"> --sort -rss
+</span></code></pre>
+<h4 id="guo-lu-zhi-ding-cheng-xu-dao-zhi-biao-ti-yi-lou-wen-ti">过滤指定程序导致标题遗漏问题</h4>
+<p>使用多重匹配，多匹配一次<code>PID</code>就可以解决</p>
+<pre data-lang="bash" style="background-color:#2b303b;color:#6c7079;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#eb6772;">ps</span><span style="color:#abb2bf;"> axw</span><span style="color:#eb6772;"> -o</span><span style="color:#abb2bf;"> pid,ppid,user,%</span><span style="color:#eb6772;">cpu</span><span style="color:#abb2bf;">,vsz,wchan,command </span><span style="color:#adb7c9;">| </span><span style="color:#eb6772;">egrep </span><span style="color:#9acc76;">&#39;(nginx|PID)&#39;
+</span></code></pre>
+<h4 id="cha-kan-zhi-ding-jin-cheng-de-cpu-memshi-yong-lu">查看指定进程的CPU&amp;MEM使用率</h4>
+<pre data-lang="bash" style="background-color:#2b303b;color:#6c7079;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#eb6772;">ps -p </span><span style="color:#abb2bf;">$(</span><span style="color:#eb6772;">pgrep -f</span><span style="color:#abb2bf;"> nginx</span><span style="color:#eb6772;"> -o</span><span style="color:#abb2bf;">)</span><span style="color:#eb6772;"> -o</span><span style="color:#abb2bf;"> pid,user,%</span><span style="color:#eb6772;">cpu</span><span style="color:#abb2bf;">,%</span><span style="color:#eb6772;">mem</span><span style="color:#abb2bf;">,cmd
+</span></code></pre>
+<h3 id="pidstat">pidstat</h3>
+<h4 id="cha-kan-zhi-ding-jin-cheng-cpunei-cun-zhan-yong">查看指定进程CPU内存占用</h4>
+<p><strong>可以优先使用ps</strong></p>
+<pre data-lang="bash" style="background-color:#2b303b;color:#6c7079;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#eb6772;">./pidstat -ru -p </span><span style="color:#abb2bf;">$(</span><span style="color:#eb6772;">pgrep -o</span><span style="color:#abb2bf;"> nginx)</span><span style="color:#eb6772;"> -h --human</span><span style="color:#abb2bf;"> 1</span><span style="color:#eb6772;"> -l
+</span></code></pre>
+<h4 id="cha-kan-zhi-ding-jin-cheng-iozhan-yong">查看指定进程IO占用</h4>
+<pre data-lang="bash" style="background-color:#2b303b;color:#6c7079;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#eb6772;">./pidstat -d -p </span><span style="color:#abb2bf;">$(</span><span style="color:#eb6772;">pgrep -o</span><span style="color:#abb2bf;"> nginx)</span><span style="color:#eb6772;"> -h --human</span><span style="color:#abb2bf;"> 1</span><span style="color:#eb6772;"> -l
+</span></code></pre>
+<h3 id="systemd">systemd</h3>
+<pre data-lang="shell" style="background-color:#2b303b;color:#6c7079;" class="language-shell "><code class="language-shell" data-lang="shell"><span style="color:#abb2bf;"># 列出正在运行的 Unit
+</span><span style="color:#abb2bf;">$ systemctl list-units
+</span><span style="color:#abb2bf;"># 重新加载一个服务的配置文件
+</span><span style="color:#abb2bf;">$ sudo systemctl reload apache.service
+</span><span style="color:#abb2bf;"># 重载所有修改过的配置文件
+</span><span style="color:#abb2bf;">$ sudo systemctl daemon-reload
+</span><span style="color:#abb2bf;"># 显示某个 Unit 的所有底层参a数
+</span><span style="color:#abb2bf;">$ systemctl show httpd.service
+</span><span style="color:#abb2bf;">
+</span><span style="color:#abb2bf;"># 查看指定进程的日志
+</span><span style="color:#abb2bf;">$ sudo journalctl _PID=1
+</span><span style="color:#abb2bf;"># 查看某个路径的脚本的日志
+</span><span style="color:#abb2bf;">$ sudo journalctl /usr/bin/bash
+</span><span style="color:#abb2bf;"># 查看指定用户的日志
+</span><span style="color:#abb2bf;">$ sudo journalctl _UID=33 --since today
+</span><span style="color:#abb2bf;"># 查看某个 Unit 的日志
+</span><span style="color:#abb2bf;">$ sudo journalctl -u nginx.service
+</span><span style="color:#abb2bf;">$ sudo journalctl -u nginx.service --since today
+</span><span style="color:#abb2bf;"># 实时滚动显示某个 Unit 的最新日志
+</span><span style="color:#abb2bf;">$ sudo journalctl -u nginx.service -f
+</span></code></pre>
+<h3 id="iptables">iptables</h3>
+<pre data-lang="shell" style="background-color:#2b303b;color:#6c7079;" class="language-shell "><code class="language-shell" data-lang="shell"><span style="color:#abb2bf;"># 清空自定义链、清空规则、清空规则计数器
+</span><span style="color:#abb2bf;">iptables -X
+</span><span style="color:#abb2bf;">iptables -F
+</span><span style="color:#abb2bf;">iptables -Z
+</span><span style="color:#abb2bf;">
+</span><span style="color:#abb2bf;"># 指定多个端口
+</span><span style="color:#abb2bf;">iptables -A INPUT -s 172.16.0.0/16 -d 172.16.100.10 -p tcp -m multiport --dports 20:22,80 -j ACCEPT
+</span><span style="color:#abb2bf;">
+</span><span style="color:#abb2bf;">
+</span><span style="color:#abb2bf;">iptables -A INPUT -s 172.16.0.0/16 -d 172.16.100.10 -p tcp -m multiport --dports 20:22,80 -j ACCEPT
+</span><span style="color:#abb2bf;">
+</span><span style="color:#abb2bf;">
+</span><span style="color:#abb2bf;"># iprange扩展
+</span><span style="color:#abb2bf;"># [!] --src-range from[-to] 源IP地址范围
+</span><span style="color:#abb2bf;"># [!] --dst-range from[-to] 目标IP地址范围
+</span><span style="color:#abb2bf;">iptabels -A INPUT -d 172.16.1.100 -p tcp --dport 80 -m iprange --src-range 172.16.1.5-192.16.1.10 -j DROP
+</span><span style="color:#abb2bf;">
+</span><span style="color:#abb2bf;"># mac 扩展
+</span><span style="color:#abb2bf;"># mac 模块可以指明源MAC地址,，适用于：PREROUTING, FORWARD，INPUT chains
+</span><span style="color:#abb2bf;"># [!] --mac-source xx:xx:xx:xx:xx
+</span><span style="color:#abb2bf;">iptables -A INPUT -s 172.16.0.100 -m mac --mac-source 
+</span><span style="color:#abb2bf;">00:50:56:12:34:56 -j ACCEPT
+</span><span style="color:#abb2bf;">
+</span><span style="color:#abb2bf;">
+</span><span style="color:#abb2bf;"># 持久保存
+</span><span style="color:#abb2bf;"># centos6:
+</span><span style="color:#abb2bf;">service iptables save
+</span><span style="color:#abb2bf;"># centos7、8
+</span><span style="color:#abb2bf;">iptables-save &gt;/PATH/TO/SOME_RULES_FILE
+</span><span style="color:#abb2bf;">
+</span><span style="color:#abb2bf;"># 加载规则 centos7：
+</span><span style="color:#abb2bf;">iptables-restore &lt; /PATH/FROM/SOME_RULES_FILE
+</span><span style="color:#abb2bf;">-n, -noflush: 不清除原有规则
+</span><span style="color:#abb2bf;">-t, -test: 仅生成规则集，但不提交
+</span><span style="color:#abb2bf;">
+</span><span style="color:#abb2bf;"># centos6
+</span><span style="color:#abb2bf;">#会自动从/etc/sysconfig/iptables 重新载入规则
+</span><span style="color:#abb2bf;">service  iptables  restart
+</span></code></pre>
+<h4 id="fang-huo-qiang-gui-ze-shi-li">防火墙规则示例</h4>
+<pre data-lang="shell" style="background-color:#2b303b;color:#6c7079;" class="language-shell "><code class="language-shell" data-lang="shell"><span style="color:#abb2bf;"># ssh 端口重要
+</span><span style="color:#abb2bf;">iptables -A INPUT -p tcp -m state --state=NEW,ESTABLISHED --dport 5151 -j ACCEPT
+</span><span style="color:#abb2bf;">
+</span><span style="color:#abb2bf;"># 服务相关
+</span><span style="color:#abb2bf;"># ng注意端口
+</span><span style="color:#abb2bf;">iptables -A INPUT -p tcp -m state --state=NEW,ESTABLISHED --dport 6100 -j ACCEPT
+</span><span style="color:#abb2bf;">
+</span><span style="color:#abb2bf;"># 其它规则
+</span><span style="color:#abb2bf;">iptables -A INPUT -m state --state=INVALID -j DROP
+</span><span style="color:#abb2bf;">iptables -A INPUT -i lo  -j ACCEPT
+</span><span style="color:#abb2bf;">iptables -A INPUT -p icmp -j ACCEPT
+</span><span style="color:#abb2bf;">iptables -A INPUT -m iprange --src-range 192.168.12.89-192.168.12.90 -j ACCEPT
+</span><span style="color:#abb2bf;">iptables -A INPUT -m state --state NEW -m tcp -p tcp --dport 10050 -j ACCEPT
+</span><span style="color:#abb2bf;">
+</span><span style="color:#abb2bf;"># END
+</span><span style="color:#abb2bf;">iptables -A INPUT -p all -s any/0 -j DROP
+</span></code></pre>
+<pre data-lang="shell" style="background-color:#2b303b;color:#6c7079;" class="language-shell "><code class="language-shell" data-lang="shell"><span style="color:#abb2bf;"># ssh 端口重要
+</span><span style="color:#abb2bf;">iptables -A INPUT -p tcp -m state --state=NEW,ESTABLISHED --dport 5151 -j ACCEPT
+</span><span style="color:#abb2bf;">
+</span><span style="color:#abb2bf;">
+</span><span style="color:#abb2bf;"># 服务相关，尽早匹配
+</span><span style="color:#abb2bf;"># ng注意端口
+</span><span style="color:#abb2bf;">iptables -A INPUT -p tcp  -m state state=NEW,ESTABLISHED,RELATED --dport 6000 -j ACCEPT
+</span><span style="color:#abb2bf;">
+</span><span style="color:#abb2bf;">
+</span><span style="color:#abb2bf;"># 其它规则
+</span><span style="color:#abb2bf;">iptables -A INPUT -m state INVALID -j DROP
+</span><span style="color:#abb2bf;">iptables -A INPUT -i lo  -j ACCEPT
+</span><span style="color:#abb2bf;">iptables -A INPUT -p icmp -j ACCEPT
+</span><span style="color:#abb2bf;">iptables -A INPUT -m iprange --src-range 192.168.12.89-192.168.12.90 -j ACCEPT
+</span><span style="color:#abb2bf;">
+</span><span style="color:#abb2bf;">
+</span><span style="color:#abb2bf;"># END
+</span><span style="color:#abb2bf;">iptables -A INPUT -p all -s any/0 -j DROP
+</span></code></pre>
+<pre data-lang="shell" style="background-color:#2b303b;color:#6c7079;" class="language-shell "><code class="language-shell" data-lang="shell"><span style="color:#abb2bf;">
+</span><span style="color:#abb2bf;"># ssh 端口重要
+</span><span style="color:#abb2bf;">iptables -A INPUT -p tcp -m state --state=NEW,ESTABLISHED --dport 5151 -j ACCEPT
+</span><span style="color:#abb2bf;">
+</span><span style="color:#abb2bf;">
+</span><span style="color:#abb2bf;"># 服务相关，尽早匹配
+</span><span style="color:#abb2bf;"># 管理服务对ng放行
+</span><span style="color:#abb2bf;">iptables -A INPUT -p tcp -s 192.168.12.12/24 -m state state=NEW,ESTABLISHED,RELATED --dport 6200 -j ACCEPT
+</span><span style="color:#abb2bf;">iptables -A INPUT -p tcp -s 192.168.12.13/24 -m state state=NEW,ESTABLISHED,RELATED --dport 6200 -j ACCEPT
+</span><span style="color:#abb2bf;">iptables -A INPUT -p tcp -s 192.168.12.61/24 -m state state=NEW,ESTABLISHED,RELATED --dport 6200 -j ACCEPT
+</span><span style="color:#abb2bf;">iptables -A INPUT -p tcp -s 192.168.12.62/24 -m state state=NEW,ESTABLISHED,RELATED --dport 6200 -j ACCEPT
+</span><span style="color:#abb2bf;">
+</span><span style="color:#abb2bf;">
+</span><span style="color:#abb2bf;">
+</span><span style="color:#abb2bf;"># 其它规则
+</span><span style="color:#abb2bf;">iptables -A INPUT -m state INVALID -j DROP
+</span><span style="color:#abb2bf;">iptables -A INPUT -i lo  -j ACCEPT
+</span><span style="color:#abb2bf;">iptables -A INPUT -p icmp -j ACCEPT
+</span><span style="color:#abb2bf;">iptables -A INPUT -m iprange --src-range 192.168.12.89-192.168.12.90 -j ACCEPT
+</span><span style="color:#abb2bf;">
+</span><span style="color:#abb2bf;"># END
+</span><span style="color:#abb2bf;">iptables -A INPUT -p all -s any/0 -j DROP
+</span></code></pre>
+<pre data-lang="shell" style="background-color:#2b303b;color:#6c7079;" class="language-shell "><code class="language-shell" data-lang="shell"><span style="color:#abb2bf;">sudo -i
+</span><span style="color:#abb2bf;">
+</span><span style="color:#abb2bf;">systemctl stop firewalld
+</span><span style="color:#abb2bf;">systemctl disable firewalld
+</span><span style="color:#abb2bf;">
+</span><span style="color:#abb2bf;">
+</span><span style="color:#abb2bf;">iptables -X
+</span><span style="color:#abb2bf;">iptables -F
+</span><span style="color:#abb2bf;">iptables -Z
+</span><span style="color:#abb2bf;">
+</span><span style="color:#abb2bf;">netstat -anpt | grep ssh | head
+</span><span style="color:#abb2bf;">
+</span><span style="color:#abb2bf;">iptables -A INPUT -p tcp -m state --state=NEW,ESTABLISHED --dport 5151 -j ACCEPT
+</span><span style="color:#abb2bf;">iptables -A INPUT -p tcp -s 192.168.12.12 -m state --state=NEW,ESTABLISHED,RELATED --dport 6200 -j ACCEPT
+</span><span style="color:#abb2bf;">iptables -A INPUT -p tcp -s 192.168.12.13 -m state --state=NEW,ESTABLISHED,RELATED --dport 6200 -j ACCEPT
+</span><span style="color:#abb2bf;">iptables -A INPUT -p tcp -s 192.168.12.61 -m state --state=NEW,ESTABLISHED,RELATED --dport 6200 -j ACCEPT
+</span><span style="color:#abb2bf;">iptables -A INPUT -p tcp -s 192.168.12.62 -m state --state=NEW,ESTABLISHED,RELATED --dport 6200 -j ACCEPT
+</span><span style="color:#abb2bf;">
+</span><span style="color:#abb2bf;">
+</span><span style="color:#abb2bf;"># 其它规则
+</span><span style="color:#abb2bf;">iptables -A INPUT -m state --state=INVALID -j DROP
+</span><span style="color:#abb2bf;">iptables -A INPUT -i lo  -j ACCEPT
+</span><span style="color:#abb2bf;">iptables -A INPUT -p icmp -j ACCEPT
+</span><span style="color:#abb2bf;">iptables -A INPUT -m iprange --src-range 192.168.12.89-192.168.12.90 -j ACCEPT
+</span><span style="color:#abb2bf;">iptables -A INPUT -m iprange --src-range 192.168.12.14-192.168.12.17 -j ACCEPT
+</span><span style="color:#abb2bf;">iptables -A INPUT -m state --state NEW -m tcp -p tcp --dport 10050 -j ACCEPT
+</span><span style="color:#abb2bf;">
+</span><span style="color:#abb2bf;">#iptables -A INPUT -p all -s any/0 -j DROP
+</span></code></pre>
+<h3 id="yum-tui-jian-shi-yong-dnf">yum(推荐使用dnf)</h3>
+<h4 id="yum-config-manager">yum-config-manager</h4>
+<pre data-lang="bash" style="background-color:#2b303b;color:#6c7079;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#eb6772;">yum -y</span><span style="color:#abb2bf;"> install yum-utils
+</span></code></pre>
+<p>建议使用阿里云yum源：（推荐）</p>
+<pre data-lang="bash" style="background-color:#2b303b;color:#6c7079;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#eb6772;">yum-config-manager --add-repo</span><span style="color:#abb2bf;"> https://download.docker.com/linux/centos/docker-ce.repo
+</span><span style="color:#eb6772;">yum-config-manager --add-repo</span><span style="color:#abb2bf;"> http://mirrors.aliyun.com/docker-ce/linux/centos/docker-ce.repo
+</span></code></pre>
+<h3 id="last">last</h3>
+<h4 id="zhong-qi-fu-wu-qi-de-shi-jian">重启服务器的时间</h4>
+<pre data-lang="bash" style="background-color:#2b303b;color:#6c7079;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#eb6772;">last -x</span><span style="color:#abb2bf;"> reboot
+</span></code></pre>
+<h3 id="pmap">pmap</h3>
+<h4 id="dang-qian-jin-cheng-zhan-yong-nei-cun-de-zong-liang">当前进程占用内存的总量</h4>
+<p><del>writeable/private 好像是当前进程占用内存的总量，可能不对</del></p>
+<pre data-lang="sh" style="background-color:#2b303b;color:#6c7079;" class="language-sh "><code class="language-sh" data-lang="sh"><span style="color:#abb2bf;">(</span><span style="color:#eb6772;">name</span><span style="color:#adb7c9;">=</span><span style="color:#9acc76;">idreader</span><span style="color:#adb7c9;">; </span><span style="color:#eb6772;">pmap -d </span><span style="color:#abb2bf;">$(</span><span style="color:#eb6772;">pgrep -fn </span><span style="color:#abb2bf;">$</span><span style="color:#eb6772;">name</span><span style="color:#abb2bf;">))
+</span></code></pre>
+<h3 id="pgrep">pgrep</h3>
+<h4 id="grepguo-lu-ming-ling-helpcan-shu">grep过滤命令help参数</h4>
+<pre data-lang="bash" style="background-color:#2b303b;color:#6c7079;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#eb6772;">pgrep --help1 </span><span style="color:#adb7c9;">|&amp; </span><span style="color:#eb6772;">grep -wEc</span><span style="color:#adb7c9;"> -- </span><span style="color:#9acc76;">&#39;-l|-f&#39;
+</span><span style="color:#eb6772;">pgrep --help1 </span><span style="color:#adb7c9;">|&amp; </span><span style="color:#eb6772;">grep -wEc</span><span style="color:#adb7c9;"> -- </span><span style="color:#9acc76;">&#39;-a|-f&#39;
+</span><span style="color:#abb2bf;">
+</span><span style="color:#eb6772;">pgrep --help1 </span><span style="color:#adb7c9;">| </span><span style="color:#eb6772;">grep -wEc</span><span style="color:#adb7c9;"> -- </span><span style="color:#9acc76;">&#39;-l|-f&#39;
+</span><span style="color:#eb6772;">pgrep --help1 </span><span style="color:#adb7c9;">| </span><span style="color:#eb6772;">grep -wEc</span><span style="color:#adb7c9;"> -- </span><span style="color:#9acc76;">&#39;-a|-f&#39;
+</span></code></pre>
+<h3 id="sudo">sudo</h3>
+<h4 id="pan-duan-yong-hu-shi-fou-ju-you-sudoquan-xian">判断用户是否具有sudo权限</h4>
+<pre data-lang="shell" style="background-color:#2b303b;color:#6c7079;" class="language-shell "><code class="language-shell" data-lang="shell"><span style="color:#abb2bf;">sudo -l -U zhangsan
+</span><span style="color:#abb2bf;">
+</span></code></pre>
+<h3 id="tian-jia-yong-hu-wei-sudoyong-hu">添加用户为sudo用户</h3>
+<pre data-lang="shell" style="background-color:#2b303b;color:#6c7079;" class="language-shell "><code class="language-shell" data-lang="shell"><span style="color:#abb2bf;">sudo usermod -aG wheel yanghe
+</span></code></pre>
+<h3 id="nmcli">nmcli</h3>
+<h4 id="pei-zhi-ipdi-zhi">配置IP地址</h4>
+<pre data-lang="shell" style="background-color:#2b303b;color:#6c7079;" class="language-shell "><code class="language-shell" data-lang="shell"><span style="color:#abb2bf;">nmcli con show
+</span><span style="color:#abb2bf;"> nmcli con mod enp0s8 ipv4.addresses 192.168.56.119/24 ipv4.gateway 192.168.56.1 ipv4.method manual
+</span><span style="color:#abb2bf;"> nmcli con up enp0s8
+</span></code></pre>
+<h2 id="3-wen-jian-cao-zuo-xiang-guan-ming-ling">3. 文件操作相关命令</h2>
+<h3 id="dasel">dasel</h3>
+<pre data-lang="bash" style="background-color:#2b303b;color:#6c7079;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#abb2bf;">
+</span><span style="color:#5ebfcc;">echo </span><span style="color:#9acc76;">&#39;{&quot;users&quot;: [{&quot;name&quot;: &quot;Tom&quot;}]}&#39; </span><span style="color:#adb7c9;">| </span><span style="color:#eb6772;">dasel</span><span style="color:#abb2bf;"> put object</span><span style="color:#eb6772;"> -p</span><span style="color:#abb2bf;"> json</span><span style="color:#eb6772;"> -t</span><span style="color:#abb2bf;"> string </span><span style="color:#9acc76;">&#39;.users.[]&#39;</span><span style="color:#abb2bf;"> name=Frank
+</span><span style="color:#eb6772;">./dasel_linux_amd64</span><span style="color:#abb2bf;"> delete</span><span style="color:#eb6772;"> -f</span><span style="color:#abb2bf;">  example.json</span><span style="color:#eb6772;"> -m </span><span style="color:#9acc76;">&#39;.(?:host=192.168.168.33)&#39;
+</span><span style="color:#abb2bf;">
+</span><span style="color:#eb6772;">./dasel_linux_amd64 -n -f</span><span style="color:#abb2bf;">  example.json</span><span style="color:#eb6772;"> -m </span><span style="color:#9acc76;">&#39;.(?:host=192.168.168.911)&#39;
+</span><span style="color:#abb2bf;">
+</span><span style="color:#abb2bf;"> </span><span style="color:#eb6772;">./dasel_linux_amd64 -n -f</span><span style="color:#abb2bf;">  example.json</span><span style="color:#eb6772;"> -m </span><span style="color:#9acc76;">&#39;[0].host&#39; 
+</span><span style="color:#abb2bf;"> </span><span style="font-style:italic;color:#5f697a;"># 将删除的内容输出到xxx.json，并不会删除源文件内容，如果不指定-o 则会在源文件上进行修改
+</span><span style="color:#eb6772;">./dasel_linux_amd64</span><span style="color:#abb2bf;"> delete</span><span style="color:#eb6772;"> -f</span><span style="color:#abb2bf;"> example.json </span><span style="color:#9acc76;">&#39;[0]&#39;</span><span style="color:#eb6772;">  -o</span><span style="color:#abb2bf;"> xxx.json
+</span><span style="color:#abb2bf;">
+</span></code></pre>
+<h4 id="can-kao">参考</h4>
+<ul>
+<li><a href="https://github.com/TomWright/dasel#one-tool-to-rule-them-all">TomWright/dasel: Select, put and delete data from JSON, TOML, YAML, XML and CSV files with a single tool. Supports conversion between formats and can be used as a Go package. (github.com)</a></li>
+<li>jq表达式在线验证<a href="https://jqplay.org/">jq play</a></li>
+</ul>
+<h3 id="tar">tar</h3>
+<h4 id="tong-guo-biao-zhun-shu-ru-jin-xing-da-bao">通过标准输入进行打包</h4>
+<p><code>ls -f</code>替换find性能会提高很多</p>
+<pre data-lang="bash" style="background-color:#2b303b;color:#6c7079;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#eb6772;">find </span><span style="color:#abb2bf;">$</span><span style="color:#eb6772;">max_dir -name </span><span style="color:#adb7c9;">*</span><span style="color:#abb2bf;">.json </span><span style="color:#adb7c9;">| </span><span style="color:#eb6772;">head -$file_num </span><span style="color:#adb7c9;">| </span><span style="color:#eb6772;">tar</span><span style="color:#abb2bf;"> zcvf $</span><span style="color:#eb6772;">tar_dir</span><span style="color:#abb2bf;">/$</span><span style="color:#eb6772;">tar_name -T</span><span style="color:#abb2bf;"> -</span><span style="color:#eb6772;"> --remove-file </span><span style="color:#adb7c9;">&gt;&gt;</span><span style="color:#abb2bf;">$</span><span style="color:#eb6772;">tar_dir</span><span style="color:#abb2bf;">/tar.log
+</span></code></pre>
+<h3 id="awk">awk</h3>
+<h4 id="shi-yong-zheng-ze-jin-xing-fen-zu">使用正则进行分组</h4>
+<pre data-lang="bash" style="background-color:#2b303b;color:#6c7079;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#5ebfcc;">echo </span><span style="color:#eb6772;">-e </span><span style="color:#9acc76;">&quot;Saturday\ntoday&quot; </span><span style="color:#adb7c9;">| </span><span style="color:#eb6772;">awk </span><span style="color:#9acc76;">&#39;match($1, /S(.*)?t(.*)y/, groups) { print groups[1]; print groups[2]; }&#39;
+</span></code></pre>
+<h3 id="pcregrep-pcre2grep">pcregrep &amp; pcre2grep</h3>
+<p>专门使用PCRE规范来实现的grep
+使用正则表达式：</p>
+<pre data-lang="shell" style="background-color:#2b303b;color:#6c7079;" class="language-shell "><code class="language-shell" data-lang="shell"><span style="color:#abb2bf;">pcregrep  -o1 &#39;echo(.*?)d&#39; hello-world.sh
+</span></code></pre>
+<blockquote>
+<p>主要原因是grep支持三种正则表达式BRE,ERE,PCRE，而其默认使用的是BRE，但\d是定义在PCRE中的，所以grep默认是不支持\d的。</p>
+</blockquote>
+<p>pcre2grep 有个好用的功能：</p>
+<pre data-lang="shell" style="background-color:#2b303b;color:#6c7079;" class="language-shell "><code class="language-shell" data-lang="shell"><span style="color:#abb2bf;">$ echo -e &#39;name:zhangsan,age:18 \n name:lisi,age:20&#39; | pcre2grep -O &#39;$1 $2&#39; &#39;name:(\w+),age:(\d+)&#39;
+</span><span style="color:#abb2bf;">zhangsan 18
+</span><span style="color:#abb2bf;">lisi 20
+</span></code></pre>
+<ul>
+<li>参考
+<ul>
+<li>https://www.cnblogs.com/codelogs/p/16060372.html</li>
+</ul>
+</li>
+</ul>
+<h3 id="tail">tail</h3>
+<h4 id="tail-fjia-guan-dao-ming-ling-hou-bu-neng-ji-shi-shu-chu-de-wen-ti-iohuan-chong">tail -f加管道命令后不能及时输出的问题(IO缓冲</h4>
+<ol>
+<li>使用stdbuf命令
+<code>tail -fn0 a.log | stdbuf -oL grep "F3 00" | grep SR</code></li>
+<li>把标准输出重定向到标准错误上，并把错误也给管道（因为stderr是无缓冲的）
+<code>tail -f &gt;&amp;2 |&amp; awk</code></li>
+</ol>
+<h2 id="4-zhong-jian-jian-xiang-guan-ming-ling">4. 中间件相关命令</h2>
+<h3 id="nginx">nginx</h3>
+<h4 id="tong-guo-xin-hao-kong-zhi-nginx">通过信号控制nginx</h4>
+<p>NGINX默认master进程pid文件在<del>/usr/local/nginx/logs/nginx.pid</del>，我的Mint在<code>/var/run/nginx.pid</code>
+![[Snipaste_2023-07-12_14-17-01.png]]
+主进程支持以下信号：</p>
+<ul>
+<li>TERM,INT ：快速关闭</li>
+<li>QUIT： 优雅的关闭</li>
+<li>HUP ：更改配置，使用新配置启动进程，关闭旧进程</li>
+<li>USR1：重新打开日志文件</li>
+<li>USR2：升级可执行文件</li>
+<li>WINCH：优雅的关闭工作进程，单个工作进程也可以用信号控制，不是必须的
+<ul>
+<li>TERM, INT：快速关闭</li>
+<li>QUIT：优雅的关闭</li>
+<li>重新打开日志文件</li>
+<li>WINCH：终止异常调试（需要启用debug_points）</li>
+</ul>
+</li>
+</ul>
+<h4 id="geng-gai-nginxpei-zhi">更改nginx配置</h4>
+<pre data-lang="bash" style="background-color:#2b303b;color:#6c7079;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#eb6772;">ps</span><span style="color:#abb2bf;"> axw</span><span style="color:#eb6772;"> -o</span><span style="color:#abb2bf;"> pid,ppid,user,%</span><span style="color:#eb6772;">cpu</span><span style="color:#abb2bf;">,vxz,wchan,command </span><span style="color:#adb7c9;">| </span><span style="color:#eb6772;">egrep </span><span style="color:#9acc76;">&#39;(nginx|PID)&#39;
+</span><span style="color:#5ebfcc;">kill</span><span style="color:#abb2bf;"> -HUP 33126
+</span></code></pre>
+<p>PID为33126的进程仍在工作，一段时间后就会退出</p>
+<h4 id="ri-zhi-wen-jian-lun-xun">日志文件轮询</h4>
+<pre data-lang="bash" style="background-color:#2b303b;color:#6c7079;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#eb6772;">mv</span><span style="color:#abb2bf;"> access.log access_bak.log
+</span><span style="color:#5ebfcc;">kill</span><span style="color:#abb2bf;"> -USR1 11604
+</span></code></pre>
+<h4 id="dong-tai-sheng-ji-ke-zhi-xing-wen-jian">动态升级可执行文件</h4>
+<p><a href="https://www.hxstrive.com/subject/nginx/796.htm">通过信号控制 nginx - Nginx 教程 (hxstrive.com)</a>
+不如kill掉，替换</p>
+<h3 id="docker">Docker</h3>
+<pre data-lang="shell" style="background-color:#2b303b;color:#6c7079;" class="language-shell "><code class="language-shell" data-lang="shell"><span style="color:#abb2bf;">docker save -o docker-elk-filebeat.tar docker-elk-filebeat:latest # 导出镜像
+</span><span style="color:#abb2bf;"> docker load -i docker-elk-filebeat.tar # 导入镜像
+</span><span style="color:#abb2bf;">docker kill 容器ID或镜像名字 # 删除容器
+</span><span style="color:#abb2bf;">docker rmi 镜像名称 # 删除镜像
+</span><span style="color:#abb2bf;">
+</span><span style="color:#abb2bf;"># 一次性删除多个容器实例：
+</span><span style="color:#abb2bf;">docker rm -f $(docker ps -a -q)
+</span><span style="color:#abb2bf;">docker rm -a -q | xargs docker rm
+</span><span style="color:#abb2bf;">
+</span><span style="color:#abb2bf;">docker export 容器ID &gt; 文件名.tar # 导出容器
+</span><span style="color:#abb2bf;"># 恢复到新的镜像，然后创建新的容器
+</span><span style="color:#abb2bf;">cat 文件名.tar | docker import - 
+</span><span style="color:#abb2bf;">docker run -it ...
+</span><span style="color:#abb2bf;">
+</span><span style="color:#abb2bf;"># 容器打包成镜像
+</span><span style="color:#abb2bf;">docker commit -m &quot;描述&quot; -a &quot;作者&quot; 容器ID:tag
+</span><span style="color:#abb2bf;">
+</span><span style="color:#abb2bf;"># 容器卷
+</span><span style="color:#abb2bf;">docker run -it --privileged=true -v /宿主机目录:/容器内目录:rw 镜像名 (默认是rw)，可以改为ro（read only），容器卷只读，不可写入。宿主机可以写入，同步给容器。
+</span><span style="color:#abb2bf;">
+</span><span style="color:#abb2bf;"># docker卷继承
+</span><span style="color:#abb2bf;">docker run -it --privileged=true --volumes-from 父类 --name u2 ubuntu
+</span><span style="color:#abb2bf;">
+</span><span style="color:#abb2bf;"># 查看所有虚玄镜像
+</span><span style="color:#abb2bf;">docker image ls -f dangling=true
+</span><span style="color:#abb2bf;"># 删除所有虚玄镜像
+</span><span style="color:#abb2bf;">docker image prune
+</span><span style="color:#abb2bf;">
+</span></code></pre>
+<p>Docker挂在主机目录访问如果出现connot open directory ：Permission denied
+解决办法：在挂载目录后多加一个--privileged=true</p>
+<h3 id="docker-compose">docker-compose</h3>
+<pre data-lang="shell" style="background-color:#2b303b;color:#6c7079;" class="language-shell "><code class="language-shell" data-lang="shell"><span style="color:#abb2bf;">docker-compose up # 启动所有docker-compose服务
+</span><span style="color:#abb2bf;">docker-compose up -d # 启动所有docker-compose服务在后台运行
+</span><span style="color:#abb2bf;">docker-compose down # 停止并删除容器、网络、卷、镜像
+</span><span style="color:#abb2bf;">docker-compose exec 容器ID /bin/bash # 进入容器内部
+</span><span style="color:#abb2bf;">docker-compose ps # 展示当前docker-compose编排过的运行的所有容器
+</span><span style="color:#abb2bf;">docker-compose top # 展示当前docker-compose编排过的容器进程
+</span><span style="color:#abb2bf;">docker-compose logs 容器ID # 查看容器输出日志
+</span><span style="color:#abb2bf;">docker-compose config # 检查配置
+</span><span style="color:#abb2bf;">docker-compose config -q # 检查配置，有问题才输出
+</span><span style="color:#abb2bf;">docker-compose restart # 重启服务
+</span><span style="color:#abb2bf;">docker-compose start # 启动服务
+</span><span style="color:#abb2bf;">docker-compose stop # 停止服务
+</span><span style="color:#abb2bf;">
+</span><span style="color:#abb2bf;">
+</span><span style="color:#abb2bf;">## 5. shell相关命令
+</span><span style="color:#abb2bf;">
+</span><span style="color:#abb2bf;">### shuf
+</span><span style="color:#abb2bf;">
+</span><span style="color:#abb2bf;">**在使用`shuf`命令时，请注意，它可能无法处理非常大的文件，因为它会将整个文件加载到内存中进行处理。对于大型文件，您可能需要寻找其他工具或方法来进行随机化处理。**
+</span><span style="color:#abb2bf;">
+</span><span style="color:#abb2bf;">```sh
+</span><span style="color:#abb2bf;">shuf input.txt
+</span><span style="color:#abb2bf;">
+</span><span style="color:#abb2bf;"># 覆盖
+</span><span style="color:#abb2bf;">shuf input.txt -o output.txt
+</span><span style="color:#abb2bf;">
+</span><span style="color:#abb2bf;"># 随机抽取5行
+</span><span style="color:#abb2bf;">shuf -n 5 input.txt
+</span><span style="color:#abb2bf;">
+</span><span style="color:#abb2bf;"># 生成一个随机数
+</span><span style="color:#abb2bf;">shuf -i 1-100 -n 1
+</span><span style="color:#abb2bf;">
+</span><span style="color:#abb2bf;"># 从标准输入读取内容
+</span><span style="color:#abb2bf;">echo -e &quot;line1\nline2\nline3&quot; | shuf
+</span><span style="color:#abb2bf;">
+</span><span style="color:#abb2bf;"># 生成指定范围小数
+</span><span style="color:#abb2bf;">min=0; max=1; scale=100; shuf -i &quot;$((min*scale))-$((max*scale))&quot; -n 1 | awk &#39;{ print $1 / 100 }&#39;
+</span><span style="color:#abb2bf;">
+</span></code></pre>
+<h2 id="5-shelljiao-ben-xiang-guan-ming-ling">5. shell脚本相关命令</h2>
+<h3 id="numfmt">numfmt</h3>
+<pre data-lang="bash" style="background-color:#2b303b;color:#6c7079;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#eb6772;">yanghe@IkunOS:~/coreutils-9.3/src$</span><span style="color:#abb2bf;"> ./numfmt</span><span style="color:#eb6772;"> --help
+</span><span style="color:#eb6772;">用法:</span><span style="color:#abb2bf;"> ./numfmt </span><span style="color:#cd74e8;">[</span><span style="color:#abb2bf;">选项</span><span style="color:#cd74e8;">]</span><span style="color:#abb2bf;">... </span><span style="color:#cd74e8;">[</span><span style="color:#abb2bf;">数字</span><span style="color:#cd74e8;">]</span><span style="color:#abb2bf;">...
+</span><span style="color:#eb6772;">对 </span><span style="color:#adb7c9;">&lt;</span><span style="color:#abb2bf;">数字</span><span style="color:#adb7c9;">&gt;</span><span style="color:#abb2bf;"> 进行重新格式化，如果未指定 </span><span style="color:#adb7c9;">&lt;</span><span style="color:#abb2bf;">数字</span><span style="color:#adb7c9;">&gt;</span><span style="color:#abb2bf;">，则从标准输入读取数字。
+</span><span style="color:#abb2bf;">
+</span><span style="color:#eb6772;">长选项的必选参数对于短选项也是必选的。
+</span><span style="color:#abb2bf;">      </span><span style="color:#eb6772;">--debug</span><span style="color:#abb2bf;">          对无效的输入内容打印警告信息
+</span><span style="color:#abb2bf;">  </span><span style="color:#eb6772;">-d, --delimiter</span><span style="color:#adb7c9;">=</span><span style="color:#abb2bf;">X    使用 X 而不是空格作为字段分隔符
+</span><span style="color:#abb2bf;">      </span><span style="color:#eb6772;">--field</span><span style="color:#adb7c9;">=</span><span style="color:#9acc76;">FIELDS   </span><span style="color:#eb6772;">replace</span><span style="color:#abb2bf;"> the numbers in these input fields (default=1)</span><span style="color:#adb7c9;">;
+</span><span style="color:#abb2bf;">                         </span><span style="color:#eb6772;">see</span><span style="color:#abb2bf;"> FIELDS below
+</span><span style="color:#abb2bf;">      </span><span style="color:#eb6772;">--format</span><span style="color:#adb7c9;">=</span><span style="color:#9acc76;">格式    </span><span style="color:#eb6772;">使用</span><span style="color:#abb2bf;"> printf 风格的浮点 </span><span style="color:#adb7c9;">&lt;</span><span style="color:#abb2bf;">格式</span><span style="color:#adb7c9;">&gt;</span><span style="color:#abb2bf;">；
+</span><span style="color:#abb2bf;">                         </span><span style="color:#eb6772;">参见下文 </span><span style="color:#adb7c9;">&lt;</span><span style="color:#abb2bf;">格式</span><span style="color:#adb7c9;">&gt;</span><span style="color:#abb2bf;"> 部分以了解细节
+</span><span style="color:#abb2bf;">      </span><span style="color:#eb6772;">--from</span><span style="color:#adb7c9;">=</span><span style="color:#9acc76;">单位      </span><span style="color:#eb6772;">使用 </span><span style="color:#adb7c9;">&lt;</span><span style="color:#abb2bf;">单位</span><span style="color:#adb7c9;">&gt;</span><span style="color:#abb2bf;"> 对输入数字进行自动缩放；默认值为 </span><span style="color:#9acc76;">&quot;none&quot;</span><span style="color:#abb2bf;">；
+</span><span style="color:#abb2bf;">                         </span><span style="color:#eb6772;">参见下文 </span><span style="color:#adb7c9;">&lt;</span><span style="color:#abb2bf;">单位</span><span style="color:#adb7c9;">&gt;</span><span style="color:#abb2bf;"> 部分
+</span><span style="color:#abb2bf;">      </span><span style="color:#eb6772;">--from-unit</span><span style="color:#adb7c9;">=</span><span style="color:#9acc76;">N    </span><span style="color:#eb6772;">指定输入的单位大小（而非默认值</span><span style="color:#abb2bf;"> 1）
+</span><span style="color:#abb2bf;">      </span><span style="color:#eb6772;">--grouping</span><span style="color:#abb2bf;">       使用区域设置中定义的方法对数字进行分组，例如 1,000,000
+</span><span style="color:#abb2bf;">                         </span><span style="color:#eb6772;">（意味着该选项在</span><span style="color:#abb2bf;"> C/POSIX 区域设置下无效果）
+</span><span style="color:#abb2bf;">      </span><span style="color:#eb6772;">--header[</span><span style="color:#adb7c9;">=</span><span style="color:#eb6772;">N]     将前</span><span style="color:#abb2bf;"> N 行视为头部，原样输出（不进行转换）；
+</span><span style="color:#abb2bf;">                         </span><span style="color:#eb6772;">如未指定</span><span style="color:#abb2bf;"> N，默认值为 1
+</span><span style="color:#abb2bf;">      </span><span style="color:#eb6772;">--invalid</span><span style="color:#adb7c9;">=</span><span style="color:#9acc76;">模式   </span><span style="color:#eb6772;">遇到无效数字时的处理模式： </span><span style="color:#adb7c9;">&lt;</span><span style="color:#abb2bf;">模式</span><span style="color:#adb7c9;">&gt;</span><span style="color:#abb2bf;"> 可以是：
+</span><span style="color:#abb2bf;">                         </span><span style="color:#eb6772;">abort（默认）、fail、warn、ignore
+</span><span style="color:#abb2bf;">      </span><span style="color:#eb6772;">--padding</span><span style="color:#adb7c9;">=</span><span style="color:#9acc76;">N      </span><span style="color:#eb6772;">将输出填充至</span><span style="color:#abb2bf;"> N 字符长度；若 N 值为正，则使用
+</span><span style="color:#abb2bf;">                         </span><span style="color:#eb6772;">右对齐；若</span><span style="color:#abb2bf;"> N 值为负，则使用左对齐；
+</span><span style="color:#abb2bf;">                         </span><span style="color:#eb6772;">若输出宽度大于</span><span style="color:#abb2bf;"> N 的绝对值，则不填充；
+</span><span style="color:#abb2bf;">                         </span><span style="color:#eb6772;">默认行为是如果输入含有空格，则自动填充
+</span><span style="color:#abb2bf;">      </span><span style="color:#eb6772;">--round</span><span style="color:#adb7c9;">=</span><span style="color:#9acc76;">方法     </span><span style="color:#eb6772;">缩放时使用指定 </span><span style="color:#adb7c9;">&lt;</span><span style="color:#abb2bf;">方法</span><span style="color:#adb7c9;">&gt;</span><span style="color:#abb2bf;"> 进行舍入；</span><span style="color:#adb7c9;">&lt;</span><span style="color:#abb2bf;">方法</span><span style="color:#adb7c9;">&gt;</span><span style="color:#abb2bf;"> 可以是：
+</span><span style="color:#abb2bf;">                         </span><span style="color:#eb6772;">up、down、from-zero（默认）、towards-zero、nearest
+</span><span style="color:#abb2bf;">      </span><span style="color:#eb6772;">--suffix</span><span style="color:#adb7c9;">=</span><span style="color:#9acc76;">后缀    </span><span style="color:#eb6772;">将 </span><span style="color:#adb7c9;">&lt;</span><span style="color:#abb2bf;">后缀</span><span style="color:#adb7c9;">&gt;</span><span style="color:#abb2bf;"> 添加到输出数字之后，并允许输入数字中
+</span><span style="color:#abb2bf;">                         </span><span style="color:#eb6772;">含有该 </span><span style="color:#adb7c9;">&lt;</span><span style="color:#abb2bf;">后缀</span><span style="color:#adb7c9;">&gt;
+</span><span style="color:#abb2bf;">      </span><span style="color:#eb6772;">--to</span><span style="color:#adb7c9;">=</span><span style="color:#9acc76;">单位        </span><span style="color:#eb6772;">使用 </span><span style="color:#adb7c9;">&lt;</span><span style="color:#abb2bf;">单位</span><span style="color:#adb7c9;">&gt;</span><span style="color:#abb2bf;"> 对输出数字进行自动缩放；参见下文 </span><span style="color:#adb7c9;">&lt;</span><span style="color:#abb2bf;">单位</span><span style="color:#adb7c9;">&gt;</span><span style="color:#abb2bf;"> 部分
+</span><span style="color:#abb2bf;">      </span><span style="color:#eb6772;">--to-unit</span><span style="color:#adb7c9;">=</span><span style="color:#9acc76;">N      </span><span style="color:#eb6772;">指定输出的单位大小（而非默认值</span><span style="color:#abb2bf;"> 1）
+</span><span style="color:#abb2bf;">  </span><span style="color:#eb6772;">-z, --zero-terminated</span><span style="color:#abb2bf;">    以 NUL 空字符而非换行符作为行分隔符
+</span><span style="color:#abb2bf;">      </span><span style="color:#eb6772;">--help</span><span style="color:#abb2bf;">        display this help and exit
+</span><span style="color:#abb2bf;">      </span><span style="color:#eb6772;">--version</span><span style="color:#abb2bf;">     output version information and exit
+</span><span style="color:#abb2bf;">
+</span><span style="color:#adb7c9;">&lt;</span><span style="color:#abb2bf;">单位</span><span style="color:#adb7c9;">&gt;</span><span style="color:#abb2bf;"> 选项：
+</span><span style="color:#abb2bf;">  </span><span style="color:#eb6772;">none</span><span style="color:#abb2bf;">       不进行自动缩放；带后缀会触发错误
+</span><span style="color:#abb2bf;">  </span><span style="color:#eb6772;">auto</span><span style="color:#abb2bf;">       接受可选的单字符或双字符后缀：
+</span><span style="color:#abb2bf;">               </span><span style="color:#eb6772;">1K</span><span style="color:#abb2bf;"> = 1000,
+</span><span style="color:#abb2bf;">               </span><span style="color:#eb6772;">1Ki</span><span style="color:#abb2bf;"> = 1024,
+</span><span style="color:#abb2bf;">               </span><span style="color:#eb6772;">1M</span><span style="color:#abb2bf;"> = 1000000,
+</span><span style="color:#abb2bf;">               </span><span style="color:#eb6772;">1Mi</span><span style="color:#abb2bf;"> = 1048576,
+</span><span style="color:#abb2bf;">  </span><span style="color:#eb6772;">si</span><span style="color:#abb2bf;">         接受可选的单字符后缀：
+</span><span style="color:#abb2bf;">               </span><span style="color:#eb6772;">1K</span><span style="color:#abb2bf;"> = 1000,
+</span><span style="color:#abb2bf;">               </span><span style="color:#eb6772;">1M</span><span style="color:#abb2bf;"> = 1000000,
+</span><span style="color:#abb2bf;">               </span><span style="color:#eb6772;">...
+</span><span style="color:#abb2bf;">  </span><span style="color:#eb6772;">iec</span><span style="color:#abb2bf;">        接受可选的单字符后缀：
+</span><span style="color:#abb2bf;">               </span><span style="color:#eb6772;">1K</span><span style="color:#abb2bf;"> = 1024,
+</span><span style="color:#abb2bf;">               </span><span style="color:#eb6772;">1M</span><span style="color:#abb2bf;"> = 1048576,
+</span><span style="color:#abb2bf;">               </span><span style="color:#eb6772;">...
+</span><span style="color:#abb2bf;">  </span><span style="color:#eb6772;">iec-i</span><span style="color:#abb2bf;">      接受可选的双字符后缀：
+</span><span style="color:#abb2bf;">               </span><span style="color:#eb6772;">1Ki</span><span style="color:#abb2bf;"> = 1024,
+</span><span style="color:#abb2bf;">               </span><span style="color:#eb6772;">1Mi</span><span style="color:#abb2bf;"> = 1048576,
+</span><span style="color:#abb2bf;">               </span><span style="color:#eb6772;">...
+</span><span style="color:#abb2bf;">
+</span><span style="color:#adb7c9;">&lt;</span><span style="color:#abb2bf;">字段</span><span style="color:#adb7c9;">&gt;</span><span style="color:#abb2bf;"> 支持 </span><span style="color:#eb6772;">cut</span><span style="color:#abb2bf;">(1) </span><span style="color:#eb6772;">风格的字段范围：
+</span><span style="color:#abb2bf;">  </span><span style="color:#eb6772;">N</span><span style="color:#abb2bf;">    第 N 个字段，从 1 开始计数
+</span><span style="color:#abb2bf;">  </span><span style="color:#eb6772;">N-</span><span style="color:#abb2bf;">   从第 N 个字段开始，到行尾
+</span><span style="color:#abb2bf;">  </span><span style="color:#eb6772;">N-M</span><span style="color:#abb2bf;">  第 N 个到第 M 个字段（含第 N 个和第 M 个）
+</span><span style="color:#abb2bf;">  </span><span style="color:#eb6772;">-M</span><span style="color:#abb2bf;">   第 1 个到第 M 个字段（含第 1 个和第 M 个）
+</span><span style="color:#abb2bf;">  </span><span style="color:#eb6772;">-</span><span style="color:#abb2bf;">    所有字段
+</span><span style="color:#eb6772;">多个字段或字段范围可以使用逗号分隔
+</span><span style="color:#abb2bf;">
+</span><span style="color:#adb7c9;">&lt;</span><span style="color:#abb2bf;">格式</span><span style="color:#adb7c9;">&gt;</span><span style="color:#abb2bf;"> 必须适合打印一个浮点参数 </span><span style="color:#9acc76;">&quot;%f&quot;</span><span style="color:#eb6772;">。
+</span><span style="color:#eb6772;">可选的单引号</span><span style="color:#abb2bf;"> (%</span><span style="color:#9acc76;">&#39;f) 将启用 --grouping（如果当前区域设置支持）。
+</span><span style="color:#9acc76;">可选的宽度值 (%10f) 会填充输出。可选的以 0 开头 (%010f) 的宽度
+</span><span style="color:#9acc76;">会使用 0 对数字进行填充。可选的负值 (%-10f) 会启用左对齐。
+</span><span style="color:#9acc76;">可选的精度 (%.1f) 会覆盖由输入所确定的精度。
+</span><span style="color:#9acc76;">
+</span><span style="color:#9acc76;">如果所有输入数字均成功转换，退出状态值将为 0。
+</span><span style="color:#9acc76;">默认情况下，./numfmt 将会在第一个转换错误出现时停止并将退出状态设为 2。
+</span><span style="color:#9acc76;">如果使用了 --invalid=&#39;</span><span style="color:#abb2bf;">fail</span><span style="color:#9acc76;">&#39;，程序每次遇到转换错误时都将输出警告，并在
+</span><span style="color:#9acc76;">最后将退出状态设为 2。如果使用了 --invalid=&#39;</span><span style="color:#abb2bf;">warn</span><span style="color:#9acc76;">&#39;，程序每次遇到转换
+</span><span style="color:#9acc76;">错误时都输出诊断信息，但最后的退出状态将为 0。如果使用了
+</span><span style="color:#9acc76;">--invalid=&#39;</span><span style="color:#abb2bf;">ignore</span><span style="color:#9acc76;">&#39;，程序在遇到转换错误时将不输出诊断信息，最后的
+</span><span style="color:#9acc76;">退出状态也将为 0。
+</span><span style="color:#9acc76;">
+</span><span style="color:#9acc76;">示例：
+</span><span style="color:#9acc76;">  $ ./numfmt --to=si 1000
+</span><span style="color:#9acc76;">            -&gt; &quot;1.0K&quot;
+</span><span style="color:#9acc76;">  $ ./numfmt --to=iec 2048
+</span><span style="color:#9acc76;">           -&gt; &quot;2.0K&quot;
+</span><span style="color:#9acc76;">  $ ./numfmt --to=iec-i 4096
+</span><span style="color:#9acc76;">           -&gt; &quot;4.0Ki&quot;
+</span><span style="color:#9acc76;">  $ echo 1K | ./numfmt --from=si
+</span><span style="color:#9acc76;">           -&gt; &quot;1000&quot;
+</span><span style="color:#9acc76;">  $ echo 1K | ./numfmt --from=iec
+</span><span style="color:#9acc76;">           -&gt; &quot;1024&quot;
+</span><span style="color:#9acc76;">  $ df -B1 | ./numfmt --header --field 2-4 --to=si
+</span><span style="color:#9acc76;">  $ ls -l  | ./numfmt --header --field 5 --to=iec
+</span><span style="color:#9acc76;">  $ ls -lh | ./numfmt --header --field 5 --from=iec --padding=10
+</span><span style="color:#9acc76;">  $ ls -lh | ./numfmt --header --field 5 --from=iec --format %10f
+</span><span style="color:#9acc76;">
+</span><span style="color:#9acc76;">GNU coreutils 在线帮助：&lt;https://www.gnu.org/software/coreutils/&gt;
+</span><span style="color:#9acc76;">请向 &lt;http://translationproject.org/team/zh_CN.html&gt; 报告任何翻译错误
+</span><span style="color:#9acc76;">完整文档 &lt;https://www.gnu.org/software/coreutils/numfmt&gt;
+</span><span style="color:#9acc76;">或者在本地使用：info &#39;</span><span style="color:#abb2bf;">(coreutils) </span><span style="color:#eb6772;">numfmt</span><span style="color:#abb2bf;"> invocation</span><span style="color:#9acc76;">&#39;
+</span><span style="color:#9acc76;">
+</span></code></pre>
+<h3 id="sui-ji-sheng-cheng-mi-ma">随机生成密码</h3>
+<pre data-lang="bash" style="background-color:#2b303b;color:#6c7079;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#eb6772;">tr -dc </span><span style="color:#9acc76;">&#39;A-Za-z0-9_!@#$%^&amp;*()-+=&#39; </span><span style="color:#adb7c9;">&lt;</span><span style="color:#abb2bf;"> /dev/urandom </span><span style="color:#adb7c9;">| </span><span style="color:#eb6772;">head -c</span><span style="color:#abb2bf;"> 12
+</span></code></pre>
+<h3 id="shc">shc</h3>
+<h4 id="jia-mi-shelljiao-ben">加密shell脚本</h4>
+<pre data-lang="bash" style="background-color:#2b303b;color:#6c7079;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#eb6772;">shc -r -f</span><span style="color:#abb2bf;"> filename.sh
+</span><span style="font-style:italic;color:#5f697a;"># 开始静态编译，让可以跨平台运行
+</span><span style="color:#eb6772;">cc -Wall -lutil -static -o</span><span style="color:#abb2bf;"> filename filename.x.c
+</span></code></pre>
+<h2 id="6-bao-guan-li-yu-huan-jing-guan-li">6. 包管理与环境管理</h2>
+<h3 id="coda">coda</h3>
+<pre data-lang="dos" style="background-color:#2b303b;color:#6c7079;" class="language-dos "><code class="language-dos" data-lang="dos"><span style="color:#abb2bf;"># 查看conda版本，验证是否安装 
+</span><span style="color:#abb2bf;">conda -V 
+</span><span style="color:#abb2bf;">
+</span><span style="color:#abb2bf;"># 更新conda至最新版本
+</span><span style="color:#abb2bf;">conda update conda 
+</span><span style="color:#abb2bf;">
+</span><span style="color:#abb2bf;"># 更新所有包
+</span><span style="color:#abb2bf;">conda update --all 
+</span><span style="color:#abb2bf;">
+</span><span style="color:#abb2bf;"># 更新指定的包
+</span><span style="color:#abb2bf;">conda update package_name 
+</span><span style="color:#abb2bf;">
+</span><span style="color:#abb2bf;"># 创建名为env_name的新环境，并在该环境下安装名为package_name 的包，
+</span><span style="color:#abb2bf;"># 可以指定新环境的版本号，例如：conda create -n python3 python=python3.7 numpy pandas，
+</span><span style="color:#abb2bf;"># 创建了python3环境，python版本为3.7，同时还安装了numpy pandas包
+</span><span style="color:#abb2bf;">conda create -n env_name package_name 
+</span><span style="color:#abb2bf;">
+</span><span style="color:#abb2bf;"># 切换至env_name环境
+</span><span style="color:#abb2bf;">conda activate env_name 
+</span><span style="color:#abb2bf;">
+</span><span style="color:#abb2bf;">#退出环境
+</span><span style="color:#abb2bf;">conda deactivate 
+</span><span style="color:#abb2bf;">
+</span><span style="color:#abb2bf;"># 显示所有已经创建的环境
+</span><span style="color:#abb2bf;">conda info -e  
+</span><span style="color:#abb2bf;"># 或者使用 
+</span><span style="color:#abb2bf;">conda env list
+</span><span style="color:#abb2bf;">
+</span><span style="color:#abb2bf;"># 复制old_env_name为new_env_name
+</span><span style="color:#abb2bf;">conda create --name new_env_name --clone old_env_name 
+</span><span style="color:#abb2bf;">
+</span><span style="color:#abb2bf;"># 删除环境
+</span><span style="color:#abb2bf;">conda remove --name env_name --all 
+</span><span style="color:#abb2bf;">
+</span><span style="color:#abb2bf;"># 查看所有已经安装的包
+</span><span style="color:#abb2bf;">conda list 
+</span><span style="color:#abb2bf;">
+</span><span style="color:#abb2bf;"># 在当前环境中安装包
+</span><span style="color:#abb2bf;">conda install package_name 
+</span><span style="color:#abb2bf;">
+</span><span style="color:#abb2bf;"># 在指定环境中安装包
+</span><span style="color:#abb2bf;">conda install --name env_name package_name 
+</span><span style="color:#abb2bf;">
+</span><span style="color:#abb2bf;"># 删除指定环境中的包
+</span><span style="color:#abb2bf;">conda remove -- name env_name package 
+</span><span style="color:#abb2bf;">
+</span><span style="color:#abb2bf;"># 采用上一步方法删除环境失败时，可采用这种方法
+</span><span style="color:#abb2bf;">conda env remove -n env_name 
+</span><span style="color:#abb2bf;">
+</span><span style="color:#abb2bf;">
+</span><span style="color:#abb2bf;"># 删除当前环境中的包
+</span><span style="color:#abb2bf;">conda remove package 
+</span><span style="color:#abb2bf;">
+</span></code></pre>
+<pre style="background-color:#2b303b;color:#6c7079;"><code><span style="color:#abb2bf;">
+</span><span style="color:#abb2bf;">#### yaml 文件级
+</span><span style="color:#abb2bf;">
+</span><span style="color:#abb2bf;">Docker Compose 的 YAML 文件包含4个一级 key:version、services、networks、volumes。
+</span><span style="color:#abb2bf;">
+</span><span style="color:#abb2bf;">- version 是必须指定的，位于文件的第一行。它定义了 Compose 文件格式（主要是API）的版本。
+</span><span style="color:#abb2bf;">- services 用于定义不同的应用服务。
+</span><span style="color:#abb2bf;">- networks 用于指引 Docker 创建新的网络。
+</span><span style="color:#abb2bf;">- volumes 用于指引 Docker 来创建新的卷。
+</span><span style="color:#abb2bf;">
+</span><span style="color:#abb2bf;">## strip — 丢弃对象文件中的符号和其他数据
+</span><span style="color:#abb2bf;">
+</span><span style="color:#abb2bf;">在嵌入式用的比较多，嵌入式存储空间一般非常小，一般服务器无所谓
+</span><span style="color:#abb2bf;">
+</span><span style="color:#abb2bf;">```shell
+</span><span style="color:#abb2bf;">yanghe@IkunOS:/tmp$ file hello_world
+</span><span style="color:#abb2bf;">hello_world: ELF 64-bit LSB executable, x86-64, version 1 (GNU/Linux), statically linked, BuildID[sha1]=0266e8c8b510581d97cd75551682b839d8c8ba47, for GNU/Linux 3.2.0, not stripped
+</span><span style="color:#abb2bf;">yanghe@IkunOS:/tmp$ du hello_world
+</span><span style="color:#abb2bf;">1024 hello_world
+</span><span style="color:#abb2bf;">yanghe@IkunOS:/tmp$ strip -s hello_world
+</span><span style="color:#abb2bf;">yanghe@IkunOS:/tmp$ du hello_world
+</span><span style="color:#abb2bf;">940 hello_world
+</span><span style="color:#abb2bf;">yanghe@IkunOS:/tmp$ file hello_world
+</span><span style="color:#abb2bf;">hello_world: ELF 64-bit LSB executable, x86-64, version 1 (GNU/Linux), statically linked, BuildID[sha1]=0266e8c8b510581d97cd75551682b839d8c8ba47, for GNU/Linux 3.2.0, stripped
+</span></code></pre>
+<p>参考：</p>
+<ul>
+<li><a href="https://cs.pynote.net/sf/c/cdm/202110268/">strip命令 | CS笔记 (pynote.net)</a></li>
+<li><a href="https://www.cnblogs.com/englyf/p/17510353.html">Linux 可执行文件瘦身指令 strip 使用示例 - ENG八戒 - 博客园 (cnblogs.com)</a></li>
+</ul>
+<h2 id="qi-ta">其它</h2>
+<h3 id="proc-pid-status-cha-kan-nei-cun-shi-yong-lu">/proc/pid/status 查看内存使用率</h3>
+<p>/proc/[PID]/status文件：每个运行的进程都在/proc目录下有一个以进程ID命名的目录。进入特定进程的目录（例如/proc/12345），然后查看status文件。在status文件中，可以找到VmRSS字段，它表示进程实际占用的物理内存。</p>
+<p><code>cat /proc/12345/status | grep VmRSS</code></p>
+<h3 id="shelljiang-stderrshu-chu-dao-stdout">shell将stderr输出到stdout</h3>
+<pre data-lang="bash" style="background-color:#2b303b;color:#6c7079;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="font-style:italic;color:#5f697a;"># |&amp; == 2&gt;&amp;1
+</span></code></pre>
+<h3 id="python3-kai-qi-wen-jian-fu-wu-qi">python3 开启文件服务器</h3>
+<pre data-lang="bash" style="background-color:#2b303b;color:#6c7079;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#eb6772;">python3 -m</span><span style="color:#abb2bf;"> http.server
+</span></code></pre>
+<h3 id="cha-kan-jin-cheng-xian-cheng-jin-cheng-xiang-xi-xin-xi">查看进程线程&amp;进程详细信息</h3>
+<pre data-lang="bash" style="background-color:#2b303b;color:#6c7079;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#eb6772;">cat</span><span style="color:#abb2bf;"> /proc/102551/status </span><span style="color:#adb7c9;">| </span><span style="color:#eb6772;">more
+</span><span style="color:#eb6772;">Name:</span><span style="color:#abb2bf;"> java
+</span><span style="color:#eb6772;">Umask:</span><span style="color:#abb2bf;"> 0002
+</span><span style="color:#eb6772;">State:</span><span style="color:#abb2bf;"> S (sleeping)
+</span><span style="color:#eb6772;">Tgid:</span><span style="color:#abb2bf;"> 102551
+</span><span style="color:#eb6772;">Ngid:</span><span style="color:#abb2bf;"> 0
+</span><span style="color:#eb6772;">Pid:</span><span style="color:#abb2bf;"> 102551
+</span><span style="color:#eb6772;">PPid:</span><span style="color:#abb2bf;"> 102344
+</span><span style="color:#eb6772;">TracerPid:</span><span style="color:#abb2bf;"> 0
+</span><span style="color:#eb6772;">Uid:</span><span style="color:#abb2bf;"> 1002 1002 1002 1002
+</span><span style="color:#eb6772;">Gid:</span><span style="color:#abb2bf;"> 1002 1002 1002 1002
+</span><span style="color:#eb6772;">FDSize:</span><span style="color:#abb2bf;"> 4096
+</span><span style="color:#eb6772;">Groups:</span><span style="color:#abb2bf;"> 1002 
+</span><span style="color:#eb6772;">VmPeak:</span><span style="color:#abb2bf;"> 23980072 kB
+</span><span style="color:#eb6772;">VmSize:</span><span style="color:#abb2bf;"> 23818032 kB
+</span><span style="color:#eb6772;">VmLck:</span><span style="color:#abb2bf;">        0 kB
+</span><span style="color:#eb6772;">VmPin:</span><span style="color:#abb2bf;">        0 kB
+</span><span style="color:#eb6772;">VmHWM:</span><span style="color:#abb2bf;">  9205188 kB
+</span><span style="color:#eb6772;">VmRSS:</span><span style="color:#abb2bf;">  9057300 kB
+</span><span style="color:#eb6772;">RssAnon:</span><span style="color:#abb2bf;">  9049584 kB
+</span><span style="color:#eb6772;">RssFile:</span><span style="color:#abb2bf;">     7716 kB
+</span><span style="color:#eb6772;">RssShmem:</span><span style="color:#abb2bf;">        0 kB
+</span><span style="color:#eb6772;">VmData:</span><span style="color:#abb2bf;"> 23656776 kB
+</span><span style="color:#eb6772;">VmStk:</span><span style="color:#abb2bf;">      132 kB
+</span><span style="color:#eb6772;">VmExe:</span><span style="color:#abb2bf;">        4 kB
+</span><span style="color:#eb6772;">VmLib:</span><span style="color:#abb2bf;">    17316 kB
+</span><span style="color:#eb6772;">VmPTE:</span><span style="color:#abb2bf;">    18692 kB
+</span><span style="color:#eb6772;">VmSwap:</span><span style="color:#abb2bf;">    25872 kB
+</span><span style="color:#eb6772;">Threads:</span><span style="color:#abb2bf;"> 213
+</span><span style="color:#eb6772;">SigQ:</span><span style="color:#abb2bf;"> 0/127861
+</span><span style="color:#eb6772;">SigPnd:</span><span style="color:#abb2bf;"> 0000000000000000
+</span><span style="color:#eb6772;">ShdPnd:</span><span style="color:#abb2bf;"> 0000000000000000
+</span><span style="color:#eb6772;">SigBlk:</span><span style="color:#abb2bf;"> 0000000000000004
+</span><span style="color:#eb6772;">SigIgn:</span><span style="color:#abb2bf;"> 0000000000000002
+</span><span style="color:#eb6772;">SigCgt:</span><span style="color:#abb2bf;"> 2000000181005ccd
+</span><span style="color:#eb6772;">CapInh:</span><span style="color:#abb2bf;"> 0000000000000000
+</span><span style="color:#eb6772;">CapPrm:</span><span style="color:#abb2bf;"> 0000000000000000
+</span><span style="color:#eb6772;">CapEff:</span><span style="color:#abb2bf;"> 0000000000000000
+</span><span style="color:#eb6772;">CapBnd:</span><span style="color:#abb2bf;"> 0000001fffffffff
+</span><span style="color:#eb6772;">CapAmb:</span><span style="color:#abb2bf;"> 0000000000000000
+</span><span style="color:#eb6772;">Seccomp:</span><span style="color:#abb2bf;"> 0
+</span><span style="color:#eb6772;">Speculation_Store_Bypass:</span><span style="color:#abb2bf;"> vulnerable
+</span><span style="color:#eb6772;">Cpus_allowed:</span><span style="color:#abb2bf;"> ffffffff,ffffffff,ffffffff,ffffffff,ffffffff
+</span><span style="color:#eb6772;">Cpus_allowed_list:</span><span style="color:#abb2bf;"> 0-159
+</span><span style="color:#eb6772;">Mems_allowed:</span><span style="color:#abb2bf;"> 00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000
+</span><span style="color:#eb6772;">000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000
+</span><span style="color:#eb6772;">,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00
+</span><span style="color:#eb6772;">000000,00000000,00000001
+</span><span style="color:#eb6772;">Mems_allowed_list:</span><span style="color:#abb2bf;"> 0
+</span><span style="color:#eb6772;">voluntary_ctxt_switches:</span><span style="color:#abb2bf;"> 478194
+</span><span style="color:#eb6772;">nonvoluntary_ctxt_switches:</span><span style="color:#abb2bf;"> 170
+</span><span style="color:#abb2bf;">
+</span></code></pre>
+
+          </div>
+        </article>
+      </div>
+      
+      <div class="column is-2 is-hidden-mobile">
+        <aside class="menu" style="position: sticky; top: 48px">
+          <p class="heading has-text-weight-bold">Contents</p>
+          <ul class="menu-list">
+            
+            <li>
+              <a id="link-ming-ling-shou-ce" class="toc is-size-7 is-active"
+                href="http://127.0.0.1:1111/posts/wo-de-linuxming-ling-bang-zhu-shou-ce/#ming-ling-shou-ce">
+                命令手册
+              </a>
+              
+              <ul>
+                
+                <li>
+                  <a id="link-1-wang-luo-xiang-guan-ming-ling" class="toc is-size-7" href="http://127.0.0.1:1111/posts/wo-de-linuxming-ling-bang-zhu-shou-ce/#1-wang-luo-xiang-guan-ming-ling">
+                    1. 网络相关命令
+                  </a>
+                </li>
+                
+                <li>
+                  <a id="link-2-xi-tong-xiang-guan-ming-ling" class="toc is-size-7" href="http://127.0.0.1:1111/posts/wo-de-linuxming-ling-bang-zhu-shou-ce/#2-xi-tong-xiang-guan-ming-ling">
+                    2. 系统相关命令
+                  </a>
+                </li>
+                
+                <li>
+                  <a id="link-3-wen-jian-cao-zuo-xiang-guan-ming-ling" class="toc is-size-7" href="http://127.0.0.1:1111/posts/wo-de-linuxming-ling-bang-zhu-shou-ce/#3-wen-jian-cao-zuo-xiang-guan-ming-ling">
+                    3. 文件操作相关命令
+                  </a>
+                </li>
+                
+                <li>
+                  <a id="link-4-zhong-jian-jian-xiang-guan-ming-ling" class="toc is-size-7" href="http://127.0.0.1:1111/posts/wo-de-linuxming-ling-bang-zhu-shou-ce/#4-zhong-jian-jian-xiang-guan-ming-ling">
+                    4. 中间件相关命令
+                  </a>
+                </li>
+                
+                <li>
+                  <a id="link-5-shelljiao-ben-xiang-guan-ming-ling" class="toc is-size-7" href="http://127.0.0.1:1111/posts/wo-de-linuxming-ling-bang-zhu-shou-ce/#5-shelljiao-ben-xiang-guan-ming-ling">
+                    5. shell脚本相关命令
+                  </a>
+                </li>
+                
+                <li>
+                  <a id="link-6-bao-guan-li-yu-huan-jing-guan-li" class="toc is-size-7" href="http://127.0.0.1:1111/posts/wo-de-linuxming-ling-bang-zhu-shou-ce/#6-bao-guan-li-yu-huan-jing-guan-li">
+                    6. 包管理与环境管理
+                  </a>
+                </li>
+                
+                <li>
+                  <a id="link-qi-ta" class="toc is-size-7" href="http://127.0.0.1:1111/posts/wo-de-linuxming-ling-bang-zhu-shou-ce/#qi-ta">
+                    其它
+                  </a>
+                </li>
+                
+              </ul>
+              
+            </li>
+            
+          </ul>
+        </aside>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+
+  
+  <section class="modal" id="search-modal">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+      <header class="modal-card-head">
+        <p class="modal-card-title">Search</p>
+      </header>
+      <section class="modal-card-body">
+        <div class="field mb-2">
+          <div class="control">
+            <input class="input" id="search" placeholder="Search this website." type="search" />
+          </div>
+        </div>
+        <div class="search-results">
+          <div class="search-results__items"></div>
+        </div>
+      </section>
+    </div>
+    <button aria-label="close" class="modal-close is-large"></button>
+  </section>
+  
+
+
+  
+
+
+
+  
+
+
+
+  
+  <footer class="footer py-4">
+    <div class="content has-text-centered">
+      <p>
+        Built with
+        <span class="icon-text">
+          <span class="icon">
+            <i class="fas fa-code"></i>
+          </span>
+          <span>code</span>
+        </span>
+        and
+        <span class="icon-text">
+          <span class="icon">
+            <i class="fas fa-heart"></i>
+          </span>
+          <span>love</span>
+        </span>
+      </p>
+      <p>
+        Powered by
+        <span class="icon-text">
+          <span class="icon">
+            <i class="fas fa-power-off"></i>
+          </span>
+          <span>zola</span>
+        </span>
+      </p>
+    </div>
+  </footer>
+  
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha384-vtXRMe3mGCbOeY7l30aIg8H9p3GdeSe4IFlP6G8JMa7o7lXvnz3GFKzPxzJdPfGK" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/galleria@1.6.1/dist/galleria.min.js" integrity="sha384-QSfwGT8/EU536DKdtyP2D6SLlh8zBaZ0cVkwfrwhqzIU9VCfJT00CLVP5t+HAiYg" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/galleria@1.6.1/dist/themes/folio/galleria.folio.min.js" integrity="sha384-DwpKI+deZB267+hPKwiOIc5Y2GKsVL0mR6hgz7GgIu7AgAMYqJwcJKY1YBNfhWcY" crossorigin="anonymous"></script>
+  
+  
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@8.13.5/dist/mermaid.min.js" integrity="sha384-0yWn54pSGtfKCU+skfA69l25VsCw+MZt4LQov3xNRoS7YkAMrFokGgSBnAWSK4pv" crossorigin="anonymous"></script>
+  
+  
+  <script src="https://cdn.jsdelivr.net/npm/chart.xkcd@1.1.13/dist/chart.xkcd.min.js" integrity="sha384-xC3h1+IHXK8seA+8KfT79Z4e0GPsznjXBoMa5nd8ooWKplPyXx92NOmljWxLC/cs" crossorigin="anonymous"></script>
+  
+  
+  <script src="http://127.0.0.1:1111/elasticlunr.min.js"></script>
+  <script src="http://127.0.0.1:1111/search_index.en.js"></script><script src="http://127.0.0.1:1111/js/site.js"></script>
+
+  
+
+<script type="text/javascript">
+  const menuBarHeight = document.querySelector("nav.navbar").clientHeight;
+  const tocItems = document.querySelectorAll(".toc");
+  const navSections = new Array(tocItems.length);
+
+  tocItems.forEach((el, i) => {
+    let id = el.getAttribute("id").substring(5);
+    navSections[i] = document.getElementById(id);
+  })
+
+  function isVisible(tocIndex) {
+    const current = navSections[tocIndex];
+    const next = tocIndex < tocItems.length - 1 ? navSections[tocIndex + 1]
+      : document.querySelectorAll("section.section").item(1);
+
+    const c = current.getBoundingClientRect();
+    const n = next.getBoundingClientRect();
+    const h = (window.innerHeight || document.documentElement.clientHeight);
+
+    return (c.top <= h) && (n.top - menuBarHeight >= 0);
+  }
+
+  function activateIfVisible() {
+    for (b = true, i = 0; i < tocItems.length; i++) {
+      if (b && isVisible(i)) {
+        tocItems[i].classList.add('is-active');
+        b = false;
+      } else
+        tocItems[i].classList.remove('is-active');
+    }
+  }
+
+  var isTicking = null;
+  window.addEventListener('scroll', () => {
+    if (!isTicking) {
+      window.requestAnimationFrame(() => {
+        activateIfVisible();
+        isTicking = false;
+      });
+      isTicking = true;
+    }
+  }, false);
+</script>
+
+
+
+
+
+  
+  
+</body>
+
+</html>
