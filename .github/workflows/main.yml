@@ -34,4 +34,4 @@ jobs:
           # BUILD_DIR: docs
           PAGES_BRANCH: gh-pages
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
-          REPOSITORY: https://github.com/marigold233/marigold233.github.io.git
+          REPOSITORY: marigold233/marigold233.github.io
