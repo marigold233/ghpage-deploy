@@ -1,0 +1,59 @@
+base_url = "http://127.0.0.1:1111"
+compile_sass = true
+build_search_index = true
+theme = "DeepThought"
+default_language = "en"
+taxonomies = [
+    { name = "categories", feed = true, paginate_by = 10},
+    { name = "tags", feed = true, paginate_by = 10 },
+]
+
+[slugify]
+paths = "on"
+taxonomies = "on"
+anchors = "on"
+
+[markdown]
+highlight_code = true
+highlight_theme = "one-dark"
+
+[extra]
+toc = true
+comments = true
+compile_sass = true
+katex.enabled = true
+katex.auto_render = true
+chart.enabled = true
+mermaid.enabled = true
+galleria.enabled = true
+
+navbar_items = [
+    { code = "en", nav_items = [
+        { url = "$BASE_URL/", name = "Home" },
+        { url = "$BASE_URL/posts", name = "Posts" },
+        # { url = "$BASE_URL/docs", name = "Docs" },
+        { url = "$BASE_URL/tags", name = "Tags" },
+        { url = "$BASE_URL/categories", name = "Categories" },
+        # { url = "$BASE_URL/random", name = "Random" },
+    ] },
+]
+
+[extra.favicon]
+favicon_16x16 = "/icons/favicon-16x16.png"
+favicon_32x32 = "/icons/favicon-32x32.png"
+apple_touch_icon = "/icons/apple-touch-icon.png"
+safari_pinned_tab = "/icons/safari-pinned-tab.svg"
+webmanifest = "/icons/site.webmanifest"
+
+# Author details
+[extra.author]
+name = "Capy"
+avatar = "/images/avatar.png"
+
+# Social links
+[extra.social]
+email = "<email_id>"
+github = "<github_username>"
+
+
+
