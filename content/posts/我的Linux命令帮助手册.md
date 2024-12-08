@@ -1,9 +1,9 @@
 +++
 title="我的linux命令帮助手册"
-date=2018-08-20
+date=2024-12-08
 
 [taxonomies]
-categories = ["Linux"]
+categories = ["技术"]
 tags = ["Linux", "command"]
 
 [extra]
