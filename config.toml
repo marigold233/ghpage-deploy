@@ -26,6 +26,7 @@ katex.auto_render = true
 chart.enabled = true
 mermaid.enabled = true
 galleria.enabled = true
+image_processing = true
 
 navbar_items = [
     { code = "en", nav_items = [

@@ -1,0 +1,21 @@
+{%- if path -%}
+    {% set mdata = get_image_metadata(path=path) %}
+    {% if mdata is defined %}
+        {% set w = width | default(value=(mdata.width / 2) | int) %}
+        {% if height is defined %}
+             {% set image = resize_image(path=path, width=w, height=height, op="fit") %}
+        {% else %}
+             {% set image = resize_image(path=path, width=w, op="fit") %}
+        {% endif %}
+
+        <figure>
+            <img src="{{ image.url }}" srcset="/{{ path }} 2x" alt="{{ alt | default(value="") }}">
+            <figcaption>{{ alt | default(value="") }}</figcaption>
+        </figure>
+
+    {% else %}
+        {{ throw(message="Failed to get image metadata for path: " ~ path) }}
+    {% endif %}
+{%- else -%}
+    {{ throw(message="Missing 'path' parameter in resized_image shortcode") }}
+{%- endif -%}
